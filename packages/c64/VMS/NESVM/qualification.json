@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "reports": [
+    "nes_apu_batch_test",
+    "nes_mmc3_batch_test",
+    "nofrendo_test",
+    "nes_dmc_test",
+    "nes_apu_effects_test",
+    "module_test",
+    "nes_timing_test",
+    "nes_audio_pending_test",
+    "nes_input_hold_test",
+    "nes_prism_padding_test",
+    "test-nes-mapper1",
+    "test-nes-extra-mappers",
+    "nes_mapper90_test",
+    "nes_mapper90_cache_test",
+    "nes_mapper90_rom_test"
+  ],
+  "physicalHardware": false,
+  "fullGame": false,
+  "ownerRom": {
+    "name": "Super Mario World (Unl) Patched.nes",
+    "sha256": "89baa458da038462b66d43648f8c850c122d01c1060bffa827fa99c2f541b5c4"
+  },
+  "module": {
+    "sha256": "5abf2ee4c065e382cd8783b4e1155b6fb68bfe6584cb6411f17afc2f6d4fe3b6",
+    "codeBytes": 97676,
+    "dataBytes": 2432,
+    "bssBytes": 16544
+  },
+  "romsPackaged": false
+}

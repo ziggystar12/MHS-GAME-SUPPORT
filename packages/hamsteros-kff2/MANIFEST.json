@@ -1,0 +1,102 @@
+{
+  "desktopSha256": "54dbc037793a871499f09c5ba7717033f59ade1dcea0560f5217af489c63e470",
+  "firmware": "2.H24",
+  "softwarePassed": true,
+  "files": [
+    {
+      "path": "APPS/IMAGE.APP",
+      "bytes": 10568,
+      "sha256": "bc9f8ea6b079b31b45c06bb2b64544bb4aa905eba2485ee5a2a2592936a175a1"
+    },
+    {
+      "path": "APPS/PAINT.APP",
+      "bytes": 1804,
+      "sha256": "8d6b13b7cc0181bbd0c7f19adf2c037ee1f6d1c1862ce7c7e91fb81dbedbe08d"
+    },
+    {
+      "path": "APPS/SID.APP",
+      "bytes": 22476,
+      "sha256": "a7b3e3d848c07f2161624a658e513e0fbf967935ccb88a6624c8698616f97149"
+    },
+    {
+      "path": "APPS/ZIPZORK.APP",
+      "bytes": 43908,
+      "sha256": "bad21b9b14dd0e98d78462b0318f020cb4352bcd371a22a39dbee4dc37ace0cc"
+    },
+    {
+      "path": "Sys/HAMSTEROS.MPE",
+      "bytes": 211269,
+      "sha256": "54dbc037793a871499f09c5ba7717033f59ade1dcea0560f5217af489c63e470"
+    },
+    {
+      "path": "Sys/Notices/EasyFlash-qualification.json",
+      "bytes": 3186,
+      "sha256": "f536f59787a2aeb5bd4b75de1c3884753259dd7a7731b647d6bced2d07a96dd4"
+    },
+    {
+      "path": "Sys/Notices/HamsterOS-NOTICE.md",
+      "bytes": 1127,
+      "sha256": "cba9b0f8aa6c67496a49ee30d3593f8c11af3cc332f0df37502995805db5a299"
+    },
+    {
+      "path": "Sys/Notices/KFF2-qualification.json",
+      "bytes": 1295,
+      "sha256": "ef5459cbe52885f7e70fbf1162b77e06f62c7c6071e65958ec59ff2a8f08673e"
+    },
+    {
+      "path": "Sys/Notices/Kung-Fu-Flash-LICENSE.txt",
+      "bytes": 871,
+      "sha256": "a02bdff13d0dde661fbd8c0a93ac57fab181b28973a3c0dce45f0f45f3a8812a"
+    },
+    {
+      "path": "Sys/Notices/MHS-Prism-Plus-LICENSE.txt",
+      "bytes": 3146,
+      "sha256": "9da0b65c2f381581c0eed5f49702a61b3d35be74f718bb4f7a2790f0c5003093"
+    },
+    {
+      "path": "Sys/Notices/MUS-GPL-2.0.txt",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "Sys/Notices/MUS-ORIGIN.md",
+      "bytes": 488,
+      "sha256": "4b98f83b4df4346152869d958eb5e9fca240a50f62da15a8f4a2cebf9e2cedb6"
+    },
+    {
+      "path": "Sys/Notices/vrEmu6502-LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "d09de2afb377d29147398264e0cc29cf6f3793221fa90cb3d091be870af91208"
+    },
+    {
+      "path": "Sys/Notices/ZipZork-GPL.txt",
+      "bytes": 18321,
+      "sha256": "61b65d8be67f0acb3a370ce0826c073b7c54a5c08b502ed6f7ffec94a300477f"
+    },
+    {
+      "path": "Sys/Notices/ZipZork-source-offer.txt",
+      "bytes": 987,
+      "sha256": "c41d3a624e2b808869e4fd4c0686ff76aef897dd246fddaced462e97313a4750"
+    },
+    {
+      "path": "Sys/Notices/ZipZork.txt",
+      "bytes": 1502,
+      "sha256": "f122121eadedb99637c7d3561ed2d42f242680d18867d2131964700e02086e4d"
+    },
+    {
+      "path": "Sys/PROVENANCE.md",
+      "bytes": 2258,
+      "sha256": "97d50b7a2863049049760c0d13747766fa3cf72225b90c9bd6edced4ed883f2b"
+    },
+    {
+      "path": "Sys/Notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 268,
+      "sha256": "a02afce72f3e0d1741d9ce3d26ec62b3853d8e1c13cf8e2515ccff8dd240e8e5"
+    }
+  ]
+}

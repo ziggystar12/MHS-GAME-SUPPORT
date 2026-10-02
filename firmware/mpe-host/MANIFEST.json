@@ -1,0 +1,92 @@
+{
+  "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
+  "testedFirmwareCommit": "018641a1fce70eba94c49c940ae677758cde0288",
+  "physicalAcceptance": false,
+  "files": [
+    {
+      "path": "MPE.TRH",
+      "bytes": 322624,
+      "sha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3"
+    },
+    {
+      "path": "MPE-DEMO.MPE",
+      "bytes": 30283,
+      "sha256": "04d5ae76d39fca0952438d1085ee8d6b93f46425eaad051fc2b7d9147685dff9"
+    },
+    {
+      "path": "VMS/MPE/engine.mvm",
+      "bytes": 120,
+      "sha256": "c236da04404ecf6d76a53b8ba7fe9a63f4596d08ea4e55a473d4752829ed5981"
+    },
+    {
+      "path": "VMS/MPE/client.crt",
+      "bytes": 24688,
+      "sha256": "b0f772ef59f135ae7257b14d420a872222fd5de4accca89e5a1f25ce49d913fe"
+    },
+    {
+      "path": "VMS/MPE/manifest.vmi",
+      "bytes": 38,
+      "sha256": "31ddf4bb5b61da8b37271239ac0cee71f149cadb5ec3e050b44e567bd3a2fa50"
+    },
+    {
+      "path": "Notices/CRC32-MIT.txt",
+      "bytes": 1105,
+      "sha256": "7041a7de46488bca009b0d82317c9e7bb6634749ed0cd3956a5ef8041664b36e"
+    },
+    {
+      "path": "Notices/FNET-Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "bfe1e9b746a3bbf96986b8fde493dab0a95e2295fd8504cf0fbf506b517b2eba"
+    },
+    {
+      "path": "Notices/FNET-NOTICE.txt",
+      "bytes": 201,
+      "sha256": "5a2eb71482ae501ba4960c520ecd743ed1ada12022218db9973d27dbde69d6ce"
+    },
+    {
+      "path": "Notices/MHS-Prism-Plus-LICENSE.txt",
+      "bytes": 3146,
+      "sha256": "9da0b65c2f381581c0eed5f49702a61b3d35be74f718bb4f7a2790f0c5003093"
+    },
+    {
+      "path": "Notices/NUFLIX-NOTICES.md",
+      "bytes": 3588,
+      "sha256": "c392d7441aa4c4e39326bd1a4aa3d914f830bd0198038f4df48363328cf6b7cc"
+    },
+    {
+      "path": "Notices/PJRC.txt",
+      "bytes": 5730,
+      "sha256": "1704ec131deb94db911fff45192a915f65623edccd9a9c53417bc8d8f1861c0c"
+    },
+    {
+      "path": "Notices/Prism-MIT.txt",
+      "bytes": 1070,
+      "sha256": "1a969dd98763da79faa7d888975880da8529f8eea768fe7cc8f43befe0c2750f"
+    },
+    {
+      "path": "Notices/SdFat-MIT.txt",
+      "bytes": 1074,
+      "sha256": "f07af78e816ae273bcdba2ba7878892d9192202a0214f10850635ff37daeba4a"
+    },
+    {
+      "path": "Notices/TeensyROM-MIT.txt",
+      "bytes": 1069,
+      "sha256": "e9fdfceaaa41e4dc9f81745e70e77902f340c54888ef5a9c0c6795acb2e8bf2b"
+    },
+    {
+      "path": "Notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 461,
+      "sha256": "3482cc9ff26288c9c86215cf0925fff83ff4c27980a3c1f2da38431cbd75578d"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "bytes": 12102,
+      "sha256": "bf1bc5f770b0442098d54f19e165dd4e78534ea553bfc197436f599e4afd3bde"
+    }
+  ]
+}

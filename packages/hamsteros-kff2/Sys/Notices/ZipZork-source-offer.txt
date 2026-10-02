@@ -1,0 +1,6 @@
+Mean Hamster Software written source offer - KFF2 HamsterOS 1.4.5 / 2.H18
+
+Under GNU GPL version 2 section 3(b), Mean Hamster Software offers any third party, free of charge, the complete machine-readable corresponding source for ZIPZORK.APP (Frotz and the HamsterOS adapter) and the separately executed MUS guest programs, with modifications, interface definitions, and build/install scripts under their applicable GNU GPL terms. No purchase or NDA is required. Electronic delivery and a durable physical medium customarily used for software interchange are available free of charge.
+
+This offer remains valid through at least 30 September 2029 and for at least three years after the last distribution, whichever is later. Request materials through https://github.com/ziggystar12/MHS-GAME-SUPPORT/issues or https://meanhamster.com/contact, identifying KFF2 HamsterOS 1.4.5 / 2.H18 and the component.
+ZIPZORK.APP SHA-256: bad21b9b14dd0e98d78462b0318f020cb4352bcd371a22a39dbee4dc37ace0cc

@@ -1,0 +1,6 @@
+.build/
+build/
+__pycache__/
+*.pyc
+md16-test
+md16-test.exe

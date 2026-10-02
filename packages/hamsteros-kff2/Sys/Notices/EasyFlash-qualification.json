@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "out": "E:\\MHS-Repository\\Mean-Hamster-Power-Engine\\.build\\artifacts\\kff2-easyflash-tests-2026-09-30T08-38-30-326Z",
+  "results": [
+    {
+      "banks": 64,
+      "variant": "complete",
+      "bytes": 1050688,
+      "sha256": "930fa6ff58f8507d8ebeecfea9efb568e2b9e219da51ea0928c7b6a1495fe09f",
+      "result": "PASS ordinary 1 MiB EF/EF3: 256 register values, original mask and EAPI replacement"
+    },
+    {
+      "banks": 128,
+      "variant": "complete",
+      "bytes": 2101312,
+      "sha256": "44e755fda850a5ac025888f56da6ff2d148be3146126bddbb1ef46e9d9a63ab1",
+      "result": "PASS 2 MiB actual EF/EF3 callbacks: every bank/half, highest-bank eviction, modes, RAM, foreground-only reads, failed SD recovery and malformed CRT rejection; 896 misses"
+    },
+    {
+      "banks": 128,
+      "variant": "sparse",
+      "bytes": 2060272,
+      "sha256": "cd097baa4c2e0ffeb2ed67fb9515bc52dedf12914e4d37ebfcef9c98dbde6e7a",
+      "result": "PASS 2 MiB actual EF/EF3 callbacks: every bank/half, highest-bank eviction, modes, RAM, foreground-only reads, failed SD recovery and malformed CRT rejection; 896 misses"
+    },
+    {
+      "banks": 256,
+      "variant": "complete",
+      "bytes": 4202560,
+      "sha256": "daf19a80a5858b30781cfef7ba0ccc5c152457804fab2fe954602bedf2a23a62",
+      "result": "PASS 4 MiB actual EF/EF3 callbacks: every bank/half, highest-bank eviction, modes, RAM, foreground-only reads, failed SD recovery and malformed CRT rejection; 1664 misses"
+    },
+    {
+      "banks": 256,
+      "variant": "sparse",
+      "bytes": 4161520,
+      "sha256": "a072f621cf885f72394329b6c99b512946b6768646c55a8e0dd69980029faa21",
+      "result": "PASS 4 MiB actual EF/EF3 callbacks: every bank/half, highest-bank eviction, modes, RAM, foreground-only reads, failed SD recovery and malformed CRT rejection; 1664 misses"
+    }
+  ],
+  "md16": "PASS actual MD16 source: 512 bank selections, 256 misses, active-slot protection, 256 IO mirrors, smaller-image masks, DMA quiesce/resume, failed SD recovery",
+  "sourceHashes": {
+    "devices/kff2/firmware/loader.c": "9c356fb2547c9a6a091fd18e336d198f60addba84bd0d3816cfad11bf9e3fbb4",
+    "devices/kff2/firmware/easyflash_extended_loader.c": "4be9bd8a48f7d9f4e92e060b91d05954edb2f410aef325fb615c92383c1c5a4e",
+    "devices/kff2/firmware/cartridges/magic_desk_16.c": "91709cce37609d56502e8ccb51e969ec7aeac80094e0400521eae77750827795",
+    "devices/kff2/firmware/cartridges/easyflash.c": "4bf018414e1d1579b8f82cc03e35e18658de6ec922930d7e175a38d056a26c5f",
+    "devices/kff2/firmware/cartridges/easyflash_3.c": "62ba0eeec891076d390b9b6cbc01771866c081acf442023fecea410440dbdb3e",
+    "devices/kff2/firmware/cartridges/cartridge.c": "6ea14017f38a8060716d974101da516949c55dff08399e0cc8b183ced1ead691",
+    "devices/kff2/firmware/main.c": "130224e7e4d5ea51581615e7966004415b67e13096fc1d6dad3bb0a254629b40",
+    "devices/kff2/firmware/menu_sd.c": "26e7e09edbfaa354fd118c4d24d4213f507dd25c14fb5886e653695f470085f7",
+    "devices/kff2/firmware/file_types.h": "a28f28fec60dc728bdaf2a604d7e6a7b280aac86cf13e3d05401f9eff299de33"
+  },
+  "firmwareFlashed": false,
+  "physicalAcceptance": false,
+  "gameDataIncluded": false
+}

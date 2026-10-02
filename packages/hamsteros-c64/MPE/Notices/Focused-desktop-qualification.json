@@ -1,0 +1,28 @@
+{
+  "version": "1.4.5",
+  "compilerVersion": "2.0.6",
+  "date": "2026-09-29",
+  "target": "Teensy 4.1 / MGC1 / MVM1 ABI 2 profile 3",
+  "firmwareSha256": "d1c4aeac14d61a41b6bbbe632811577fdb089e215af5a51d8773875c9798fc8f",
+  "desktopSha256": "b078124da339b585bfa0d2cafc692554b3d186b86e4ce2b56208b65e549f739f",
+  "codeBytes": 130968,
+  "staticBytes": 120896,
+  "guestRamBytes": 524288,
+  "packageChecksPassed": true,
+  "finalFirmwareChecksPassed": true,
+  "checkedFirmwareHeaders": {
+    "VMHostPoll.h": "9ae481b32b0cc1e38bf94154d118183f924a41eb93a8d43c1b14621324010a04",
+    "VMC64TransferHost.h": "2340adbf318a6b2c5577dff1d764cc4d6d0a6db2ed901f3d32da32e9d8111a43"
+  },
+  "physicalAcceptance": false,
+  "features": [
+    "Focused dual-pane File Manager",
+    "Drive chooser",
+    "Ctrl+P pane switch",
+    "F5 refresh",
+    "Context-sensitive F1 help",
+    "Distinct app icons",
+    "Troubleshooting"
+  ],
+  "previousBaselineSha256": "4fa4e2fef66e00607f4331ab7aa22aebce5f1bf7f435a5a31459f64772d722e0"
+}

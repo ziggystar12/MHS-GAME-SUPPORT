@@ -1,0 +1,191 @@
+{
+  "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
+  "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
+  "testedFirmwareCommit": "018641a1fce70eba94c49c940ae677758cde0288",
+  "software": {
+    "passed": true,
+    "host": {
+      "passed": true,
+      "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
+      "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
+      "desktopServices": 3151903,
+      "desktopControl": true,
+      "engineAdmission": [
+        {
+          "path": "games/runtime/another-world/engine.mvm",
+          "sha256": "efe380267feb1957aa33888d27ae9dc50667dc78d38423ca2caa7ab8014eb0c7"
+        },
+        {
+          "path": "games/runtime/atlantis/engine.mvm",
+          "sha256": "e1e5fda70393cd90e4c4cdd4f16a728a51af7da675c87de9eb572e883b3c324b"
+        },
+        {
+          "path": "games/runtime/doom/engine.mvm",
+          "sha256": "1893f2ceb541200a9e278c3bf5d7e2a55b47925e7e7da4b039b8f7131338d16b"
+        },
+        {
+          "path": "games/runtime/kyrandia/engine.mvm",
+          "sha256": "2b2d898e33828a69a3df420f428076fa640028977556ca4809491a5d3c5f895d"
+        },
+        {
+          "path": "games/runtime/loom/engine.mvm",
+          "sha256": "761b65c67be161c7eb8439815ce1265f872bda1db1b3b72c8a0b5bd5160e3bb9"
+        },
+        {
+          "path": "games/runtime/lsl2/engine.mvm",
+          "sha256": "b228cbbfd0377128ce1838b12e4a47341ee3cb12dceeef4ab4b1d191a4f1a8b7"
+        },
+        {
+          "path": "games/runtime/mm4/engine.mvm",
+          "sha256": "b744bf0f25f4070a6ca8b841860ea82898f350fc0e2b253859572d1df4635e23"
+        },
+        {
+          "path": "games/runtime/monkey/engine.mvm",
+          "sha256": "3be55494edd096e5d7cfb0279f41f2600b1540ba5270443131af045600296030"
+        },
+        {
+          "path": "games/runtime/mule/engine.mvm",
+          "sha256": "1de7ec0aab6d6401b8bd67992c9ebaaae449b88380887a0e907a2f1848524567"
+        },
+        {
+          "path": "games/runtime/pq2/engine.mvm",
+          "sha256": "b60732e6c628512cc1f71c132a113df41d39620932e200d9f02a43025c8fa93f"
+        },
+        {
+          "path": "games/runtime/sq3/engine.mvm",
+          "sha256": "e604064e02221462fa34c86370756165ff16f031ba7f710ceec5d1b1668d4292"
+        },
+        {
+          "path": "vms/AGIVM/VMS/AGIVM/engine.mvm",
+          "sha256": "8cca8714747532de02e50564dfa93773eeb10c7d0108ebbe5caf6375617839d7"
+        },
+        {
+          "path": "vms/GBVM/VMS/GBVM/engine.mvm",
+          "sha256": "03962ee20dac03a42032e67f6d11f67427d3a8093f6ef8b59be7cd0c3af3ae18"
+        },
+        {
+          "path": "vms/GGVM/VMS/GGVM/engine.mvm",
+          "sha256": "1396ee6134d981548ff6588ee8050d0b973e545a77bb559d96e8e83603c57e18"
+        },
+        {
+          "path": "vms/NESVM/VMS/NESVM/engine.mvm",
+          "sha256": "5abf2ee4c065e382cd8783b4e1155b6fb68bfe6584cb6411f17afc2f6d4fe3b6"
+        }
+      ],
+      "demoSha256": "04d5ae76d39fca0952438d1085ee8d6b93f46425eaad051fc2b7d9147685dff9",
+      "physicalAcceptance": false
+    },
+    "services": {
+      "passed": true,
+      "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
+      "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
+      "results": [
+        {
+          "name": "test-usb-files.mjs",
+          "output": "PASS production USB storage: no SD, namespace aliases, reads/writes/listing, metadata, cross-volume copy, invalid paths, reserved roots, tombstoned hotplug handles and no stale replacement sync\r\nPASS USB namespace: missing service cannot fall through to SD, including case and ./ aliases\r\nPASS: actual generic host file services; read/write/flush/truncate/rename/list/space, 24 handles, invalid paths/flags/spans and injected write/flush failures"
+        },
+        {
+          "name": "prepare-desktop-usb.test.mjs",
+          "output": "✔ USB transfers finish, detach, or halt DMA before a bounded failure returns (325.1979ms)\n✔ desktop lifecycle detects replacement media, abandons stale handles, and powers down (390.8957ms)\n✔ USB disconnect IRQ schedule waits halt DMA instead of blocking forever (292.0477ms)\n✔ pinned EHCI starts idle and only polls live periodic endpoints, with bounded disconnect (450.7162ms)\n✔ SDK patches reject unrecognized upstream source (1.8376ms)\n✔ pinned USB timer bookkeeping leaves the C64 bus interrupt live and preserves nested masks (313.8236ms)\n✔ storage-only compile retains excluded upstream sources and licensing (13.4181ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1872.9607"
+        },
+        {
+          "name": "test-teensy-adapter.mjs",
+          "output": "PASS long IEC scan: 128 entries, static snapshot per batch, no repeated color-mode switching, final Prism refresh, activity and timer wrap\r\nPASS Teensy adapter: software pointer and application damage in one frozen frame, bounded storage cursors, optional USB drive and file routing, foreground TCP servicing during rendering, real drive descriptors, unavailable-device isolation, failed-save preservation, input, launch/quit, RTC and timer wrap"
+        },
+        {
+          "name": "test-teensy-files.mjs",
+          "output": "PASS Teensy file callbacks: SD/USB/IEC copies and recursive folders; optional USB routing; cross-volume rename rejection; exclusive commit; CRC readback and write-failure cleanup; source preservation; raw names after cache loss; explicit delete; real disk labels; REL rejected"
+        },
+        {
+          "name": "test-teensy-network.mjs",
+          "output": "Teensy HTTP: small-enum ABI, 32-bit TCP option, DNS/numeric connect, cleanup and retry passed\r\nTeensy Ethernet: 32 DHCP restarts, ordered cleanup before shared-memory release, startup failures, static IP, no cable and timeout recovery passed\r\nREPRODUCED old FNET profile: small ACK passes, all packets above 1024 bytes dropped\r\nPASS actual FNET: full-MTU packets and four-packet RX burst accepted; overflow and allocation failure safe"
+        },
+        {
+          "name": "iec-adapter-compile",
+          "output": ""
+        },
+        {
+          "name": "iec-adapter",
+          "output": "IEC adapter passed: callback guards, static display, raw names, PRG launch, SD2IEC image mount/wildcard launch and directory navigation"
+        },
+        {
+          "name": "iec-host-compile",
+          "output": ""
+        },
+        {
+          "name": "iec-host",
+          "output": "IEC native host passed: mailbox requests/results, ownership, invalid replies, timeout, return tokens, persistent channel tables, 128-byte stream payloads and destructive-name guards"
+        },
+        {
+          "name": "iec-session-compile",
+          "output": ""
+        },
+        {
+          "name": "iec-session",
+          "output": "PASS actual host callback faults: input, ACK, combined pending ACK, quiet/replay, translated selector; preserved error and no further pump\r\nPASS host restart: fresh START, first packet and ACK after three dirty IEC recovery sessions"
+        },
+        {
+          "name": "iec-live-compile",
+          "output": ""
+        },
+        {
+          "name": "iec-live",
+          "output": "Live IEC protocol passed: streaming 160 entries without reopening, title, parent filtering, hidden query, image CD, file bytes, EOF, rename, invalid/missing/truncated input"
+        },
+        {
+          "name": "iec-live_host-compile",
+          "output": ""
+        },
+        {
+          "name": "iec-live_host",
+          "output": "Live IEC host passed: Prism loan retained, late-packet replay, absent drive returns without reboot, bounded lost-worker recovery"
+        },
+        {
+          "name": "scheduler-compile",
+          "output": ""
+        },
+        {
+          "name": "scheduler",
+          "output": "Packaged scheduler: input, ACK/replay ownership and 48 PAL/NTSC transfers during slow SD/USB work passed."
+        },
+        {
+          "name": "teensy_startup_test.mjs",
+          "output": "{\"successfulStartups\":18,\"actualDesktopReceiver\":true,\"realColdCommit\":true,\"dirtyRam\":true,\"heldInputs\":true,\"modeledFrameTicks\":true,\"physicalAcceptance\":false}\nPASS compiled ARM callback 0x13a4d within loaded extent 0x2ff98; AUX/data/out-of-image callbacks rejected\r\nPASS PAL/NTSC actual receiver startup, injected firmware 0x72/0x73 failures, versioned diagnostics and recovery instructions"
+        },
+        {
+          "name": "teensy_dma_grant_test.mjs",
+          "output": "{\"passed\":true,\"results\":[{\"standard\":\"PAL\",\"arrivalCases\":247,\"earlyRetries\":7,\"maxAcquireLatencyCycles\":36},{\"standard\":\"NTSC\",\"arrivalCases\":256,\"earlyRetries\":7,\"maxAcquireLatencyCycles\":36}],\"grantToReadyCycles\":12,\"readyWindowCycles\":358,\"completions\":48,\"noHostReturns\":true,\"expiredGrantClosed\":true,\"model\":\"actual receiver instructions; asynchronous write/read acquisition with BA high\",\"physicalAcceptance\":false}"
+        },
+        {
+          "name": "speech-compile",
+          "output": ""
+        },
+        {
+          "name": "speech-pcm8",
+          "output": "PASS packed4 and PCM8 FIFO: full levels, 16KiB wrap/refill, odd clip, timer wrap, underrun midpoint, resume and cancel\r\nPASS actual staged IO2: remember after bus release, changing PIT value, corruption, lease/profile/bank gates and unchanged ACK/mailbox writes\r\nPASS PAL incompatible wire version, service and profile release status as Error without file/timer/audio; wrong receiver capability rejects before picture bytes; fallback withdraws speech services\r\nPASS PAL 80001 ordered samples, resident16KB wrap, 4 concurrent picture flips in 6 frame grants, max modeled DMA 227us, normal restore, cancel and file failure\r\nPASS PAL initial/later speech-only overflow keeps exact normal raster, and cancellation preserves pending picture ownership\r\nPASS PAL expired32us acquisition, late60us readiness, not-ready retry,350us total fail-closed release\r\nPASS PAL exact served-byte echo across PIT changes, bit-corruption mask, direct lease/profile gate, per-clip reset and stopped-clock report\r\nPASS PAL actual callback install, cached samples, mailbox reads/writes, wrong bank, stop neutrality, error/reset restoration and unchanged M3TP signature\r\nPASS NTSC incompatible wire version, service and profile release status as Error without file/timer/audio; wrong receiver capability rejects before picture bytes; fallback withdraws speech services\r\nPASS NTSC 80001 ordered samples, resident16KB wrap, 4 concurrent picture flips in 6 frame grants, max modeled DMA 227us, normal restore, cancel and file failure\r\nPASS NTSC initial/later speech-only overflow keeps exact normal raster, and cancellation preserves pending picture ownership\r\nPASS NTSC expired32us acquisition, late60us readiness, not-ready retry,350us total fail-closed release\r\nPASS NTSC exact served-byte echo across PIT changes, bit-corruption mask, direct lease/profile gate, per-clip reset and stopped-clock report\r\nPASS NTSC actual callback install, cached samples, mailbox reads/writes, wrong bank, stop neutrality, error/reset restoration and unchanged M3TP signature"
+        },
+        {
+          "name": "compiled desktop and native apps",
+          "output": "Production ARM loader and packaged desktop/native APP lifecycle passed"
+        }
+      ],
+      "physicalAcceptance": false
+    },
+    "standaloneVms": {
+      "passed": true,
+      "packages": [
+        {
+          "id": "NESVM",
+          "sha256": "0512b1e24efc7113a84cd26fe19749f91fa6d17f394486e4b2c027b2fc8e8f7a",
+          "engineSha256": "5abf2ee4c065e382cd8783b4e1155b6fb68bfe6584cb6411f17afc2f6d4fe3b6",
+          "clientSha256": "067b039d6d45343c09c4850391587d2b51f29e3ea2195d923c2f7c9d76982835",
+          "targets": [
+            "teensy",
+            "kff2"
+          ]
+        }
+      ]
+    }
+  },
+  "physicalAcceptance": false
+}

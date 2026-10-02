@@ -1,0 +1,12 @@
+format=HSPD v2
+language=en-US
+source_lines=109140
+accepted_words=107194
+bloom_bytes=196608
+hash_count=7
+bits_set=556142
+fill_percent=35.359
+estimated_false_positive_percent=0.1132
+suggestion_words=2309
+suggestion_bytes=20480
+file_bytes=217136

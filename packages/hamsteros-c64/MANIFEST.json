@@ -1,0 +1,182 @@
+{
+  "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
+  "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
+  "physicalAcceptance": false,
+  "files": [
+    {
+      "path": "APPS/HAMNET.APP",
+      "bytes": 40236,
+      "sha256": "632d6b83af2ff2dd8e7659bf073cac6ab7e21c453755dd27b2b9a8d6dea9b1f5"
+    },
+    {
+      "path": "APPS/HAMWRITE.APP",
+      "bytes": 8968,
+      "sha256": "401fd9f569c8e30eab74b223e0bd964ef2faa1276ebf797dc51f05646fadf76b"
+    },
+    {
+      "path": "APPS/IMAGE.APP",
+      "bytes": 10568,
+      "sha256": "bc9f8ea6b079b31b45c06bb2b64544bb4aa905eba2485ee5a2a2592936a175a1"
+    },
+    {
+      "path": "APPS/PAINT.APP",
+      "bytes": 1804,
+      "sha256": "8d6b13b7cc0181bbd0c7f19adf2c037ee1f6d1c1862ce7c7e91fb81dbedbe08d"
+    },
+    {
+      "path": "APPS/SID.APP",
+      "bytes": 22476,
+      "sha256": "a7b3e3d848c07f2161624a658e513e0fbf967935ccb88a6624c8698616f97149"
+    },
+    {
+      "path": "APPS/ZIPZORK.APP",
+      "bytes": 43908,
+      "sha256": "bad21b9b14dd0e98d78462b0318f020cb4352bcd371a22a39dbee4dc37ace0cc"
+    },
+    {
+      "path": "Sys/ESDB-COPYRIGHT.txt",
+      "bytes": 1314,
+      "sha256": "c66c149acc3e093b4b2b0d26177a1a5f25329e47946d7076bb3639cc02cd31d5"
+    },
+    {
+      "path": "Sys/HAMSTEROS.MPE",
+      "bytes": 234537,
+      "sha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426"
+    },
+    {
+      "path": "Sys/Notices/ZipZork-GPL.txt",
+      "bytes": 18321,
+      "sha256": "61b65d8be67f0acb3a370ce0826c073b7c54a5c08b502ed6f7ffec94a300477f"
+    },
+    {
+      "path": "Sys/Notices/ZipZork.txt",
+      "bytes": 1502,
+      "sha256": "f122121eadedb99637c7d3561ed2d42f242680d18867d2131964700e02086e4d"
+    },
+    {
+      "path": "Sys/PROVENANCE.md",
+      "bytes": 2258,
+      "sha256": "97d50b7a2863049049760c0d13747766fa3cf72225b90c9bd6edced4ed883f2b"
+    },
+    {
+      "path": "Sys/SPELL.DAT",
+      "bytes": 217136,
+      "sha256": "e72efc0bc32978712849f0b92f1b78aa3837c060e28661341f1a2c8e4821a984"
+    },
+    {
+      "path": "Sys/SPELL_REPORT.txt",
+      "bytes": 243,
+      "sha256": "26d8d611eb5920643f086173dc082ef3ce3fe032c7e5fcdd0edb584051f8a6be"
+    },
+    {
+      "path": "MPE/Notices/Atlantis-qualification.json",
+      "bytes": 1737,
+      "sha256": "4d3738d764bedb04a81dcfe824469eff7fc097681db511c772ccf02bb2e061f2"
+    },
+    {
+      "path": "MPE/Notices/EasyFlash-qualification.json",
+      "bytes": 1737,
+      "sha256": "4d3738d764bedb04a81dcfe824469eff7fc097681db511c772ccf02bb2e061f2"
+    },
+    {
+      "path": "MPE/Notices/Firmware-provenance.json",
+      "bytes": 611,
+      "sha256": "978b805f8b0e7b0000b0da29d03049c8144dd9db13d60f9065e05f90bac3da0a"
+    },
+    {
+      "path": "MPE/Notices/Focused-desktop-qualification.json",
+      "bytes": 1002,
+      "sha256": "a8dc8639b064af2d9c58fd9d55cb1462a21ddd5d5183860f15a2d1ba73c6f6ad"
+    },
+    {
+      "path": "MPE/Notices/Game-launch-qualification.json",
+      "bytes": 1737,
+      "sha256": "4d3738d764bedb04a81dcfe824469eff7fc097681db511c772ccf02bb2e061f2"
+    },
+    {
+      "path": "MPE/Notices/HamNet-Client-LICENSE.txt",
+      "bytes": 1099,
+      "sha256": "673b4c29dd1efc526634f268632f4c0248879168dd2f02dd4c3876fbc5a95d2b"
+    },
+    {
+      "path": "MPE/Notices/HamsterOS-NOTICE.md",
+      "bytes": 1280,
+      "sha256": "9475bf2e3bb36c8cc0b229c240e36dae52d320945174dc4a4c0eab87157f218f"
+    },
+    {
+      "path": "MPE/Notices/MHS-Prism-Plus-LICENSE.txt",
+      "bytes": 3146,
+      "sha256": "9da0b65c2f381581c0eed5f49702a61b3d35be74f718bb4f7a2790f0c5003093"
+    },
+    {
+      "path": "MPE/Notices/Mouse-update-qualification.json",
+      "bytes": 2074,
+      "sha256": "318ad9bf551404c33e5b413391f9877be7d23ffbab88055cceceba5b550ac583"
+    },
+    {
+      "path": "MPE/Notices/Mouse-update-source.md",
+      "bytes": 835,
+      "sha256": "5a453cdc5b26b73b531011b43c4aba600ce1dc7b75f6ed62de4c63c604fcfdab"
+    },
+    {
+      "path": "MPE/Notices/MUS-GPL-2.0.txt",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "MPE/Notices/MUS-ORIGIN.md",
+      "bytes": 571,
+      "sha256": "0898220c8821c195efcb85c3aea83819410b162b0ed3aa3f4c98b890eaef5ea7"
+    },
+    {
+      "path": "MPE/Notices/NUFLIX-LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "1a969dd98763da79faa7d888975880da8529f8eea768fe7cc8f43befe0c2750f"
+    },
+    {
+      "path": "MPE/Notices/NUFLIX-NOTICES.md",
+      "bytes": 3588,
+      "sha256": "c392d7441aa4c4e39326bd1a4aa3d914f830bd0198038f4df48363328cf6b7cc"
+    },
+    {
+      "path": "MPE/Notices/Release-qualification.json",
+      "bytes": 1737,
+      "sha256": "4d3738d764bedb04a81dcfe824469eff7fc097681db511c772ccf02bb2e061f2"
+    },
+    {
+      "path": "MPE/Notices/TeensyROM-LICENSE.txt",
+      "bytes": 1069,
+      "sha256": "e9fdfceaaa41e4dc9f81745e70e77902f340c54888ef5a9c0c6795acb2e8bf2b"
+    },
+    {
+      "path": "MPE/Notices/USBHost_t36-LICENSE.txt",
+      "bytes": 2445,
+      "sha256": "7f207562aa33ded10fb2915f6ed8b5f980efc8f46997159419b1783ac45b42fc"
+    },
+    {
+      "path": "MPE/Notices/vrEmu6502-LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "d09de2afb377d29147398264e0cc29cf6f3793221fa90cb3d091be870af91208"
+    },
+    {
+      "path": "Sys/Notices/Spelling.txt",
+      "bytes": 1314,
+      "sha256": "c66c149acc3e093b4b2b0d26177a1a5f25329e47946d7076bb3639cc02cd31d5"
+    },
+    {
+      "path": "MPE/Notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "Sys/Notices/ZipZork-source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 333,
+      "sha256": "4de4b491118ca8ef3bc6f4c8dd879a73c397770e8461ad09db013d55dcbab096"
+    }
+  ]
+}

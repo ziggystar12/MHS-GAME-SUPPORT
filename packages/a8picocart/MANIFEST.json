@@ -1,0 +1,112 @@
+{
+  "firmwareVersion": "1.2.10",
+  "firmwareSha256": "cc5e08bb4feb3c5ab8a32e08aab96819186f354514f91b5a627efbebdd7d5ded",
+  "desktopVersion": "0.4.2",
+  "desktopSha256": "fee5e0f2e69275f330edfc2e5e946e6a6f50c13e560d4b02d3bdbc024131c9aa",
+  "doomSha256": "1319b066f9e569a6e05c024fb0defab6e2117e82238997fe4a495a22d5c5a896",
+  "sourceCommit": "a4a8664f62180a9e1db1be4da7fa83c7e8dbb869",
+  "softwarePassed": true,
+  "physicalAcceptance": false,
+  "files": [
+    {
+      "path": "A8PicoCart-MPE.uf2",
+      "bytes": 1145344,
+      "sha256": "cc5e08bb4feb3c5ab8a32e08aab96819186f354514f91b5a627efbebdd7d5ded"
+    },
+    {
+      "path": "HAMSTEROS.MPE",
+      "bytes": 15068,
+      "sha256": "fee5e0f2e69275f330edfc2e5e946e6a6f50c13e560d4b02d3bdbc024131c9aa"
+    },
+    {
+      "path": "DOOM.MPE",
+      "bytes": 1844817,
+      "sha256": "1319b066f9e569a6e05c024fb0defab6e2117e82238997fe4a495a22d5c5a896"
+    },
+    {
+      "path": "SYS/NOTEPAD.APP",
+      "bytes": 3011,
+      "sha256": "367f0eb8dbcdfc65becef1656032a612651076e7fe9572478dde3f2cc4f653d2"
+    },
+    {
+      "path": "SYS/CALC.APP",
+      "bytes": 727,
+      "sha256": "d711e5e4e42b2ff49f2903321fa410631f9c24b1382667e7fbcb5e890f5491aa"
+    },
+    {
+      "path": "SYS/SNAKE.APP",
+      "bytes": 1304,
+      "sha256": "fe818635b5666c431b23a99aeb16a310cc8ac34363afbad3d35ec6f097929531"
+    },
+    {
+      "path": "SYS/PAINT.APP",
+      "bytes": 1890,
+      "sha256": "05ee6fbe4fe7543db078036d64650755ee77d1db6ce7ac8199a46dda4f20a76f"
+    },
+    {
+      "path": "SYS/IMAGE.APP",
+      "bytes": 732,
+      "sha256": "8813315dcf432ec86ebc26d5d0ca112ce548bb5d4f88e34734a6816a39eee992"
+    },
+    {
+      "path": "SYS/IMAGE.LIB",
+      "bytes": 12640,
+      "sha256": "816ae9e7f162ba80354db99702329415b8b1a173333575bea8bf3e2887f63f63"
+    },
+    {
+      "path": "Atari-File-Formats.md",
+      "bytes": 2632,
+      "sha256": "3044974762ea3a57cc2691bc1528f0e4c7355cfca72c5143e63cb49023ce9db0"
+    },
+    {
+      "path": "Notices/7800-LICENSE-TiaSound.txt",
+      "bytes": 25270,
+      "sha256": "cc535c21133c895b56b374c8a1dc1eb948d99003ed2b47372069456b62f42b24"
+    },
+    {
+      "path": "Notices/7800-LICENSE.txt",
+      "bytes": 18347,
+      "sha256": "9fae8c2ae211ea4b3515621484bb0a558a0ca62d05c9534265c7e223bdf981b0"
+    },
+    {
+      "path": "Notices/Doom-COPYING.md",
+      "bytes": 18256,
+      "sha256": "82d744fd900cc0643305f82d37439868158de3d155b60e1c5ae3633c21bbc778"
+    },
+    {
+      "path": "Notices/HamsterOS-A8/A8-APP-SERVICES.md",
+      "bytes": 5999,
+      "sha256": "9482717cb974c7edeb8e96b746cf17215fa63aa90d27641d5661b54319986cbf"
+    },
+    {
+      "path": "Notices/HamsterOS-A8/NOTICE.md",
+      "bytes": 2129,
+      "sha256": "93f376ea353e07868aff523f7a4ab194d8ca723f696e8f3fbb6870112f7aa809"
+    },
+    {
+      "path": "Notices/HamsterOS-A8/README.md",
+      "bytes": 5325,
+      "sha256": "b876de71dcf4a50dcc442714fcca2212610c5ad97e30246bccd054d7e90dbc6d"
+    },
+    {
+      "path": "Notices/Image-Codecs-LICENSE.txt",
+      "bytes": 1099,
+      "sha256": "673b4c29dd1efc526634f268632f4c0248879168dd2f02dd4c3876fbc5a95d2b"
+    },
+    {
+      "path": "Notices/Image-Codecs-ORIGIN.md",
+      "bytes": 639,
+      "sha256": "37efe08eced12ab832d47ebdc7d672829757cb78524793105b95dd87b05ea38c"
+    },
+    {
+      "path": "Notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 724,
+      "sha256": "cc2b5303dc0f628528d9f386864bb264055920ffea408c4294bb45567c10dc7c"
+    }
+  ]
+}

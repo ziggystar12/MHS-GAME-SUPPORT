@@ -1,0 +1,21 @@
+name: Support checks
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check downloads and links
+        run: python3 tools/check.py
+      - name: Check C64 transfers and KFF2 cache
+        run: |
+          mkdir -p .build
+          g++ -std=c++17 -O2 tests/c64-transfer-test.cpp -o .build/c64-transfer-test
+          ./.build/c64-transfer-test
+          gcc -std=gnu11 -O2 integration/kff2/mpe/tests/md16-test.c -o .build/md16-test
+          ./.build/md16-test

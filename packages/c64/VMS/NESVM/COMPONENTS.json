@@ -1,0 +1,43 @@
+{
+  "product": "NESVM",
+  "version": "1.2.3-mapper90",
+  "sourceCommit": null,
+  "components": [
+    {
+      "name": "NES engine",
+      "artifact": "engine.mvm",
+      "sha256": "5abf2ee4c065e382cd8783b4e1155b6fb68bfe6584cb6411f17afc2f6d4fe3b6",
+      "license": "Nofrendo and MPE engine adapter: GNU Library GPL version 2; other component-specific MIT/zlib/public-domain notices retained",
+      "source": "NESVM-source.zip",
+      "licenseNotice": "LICENSE-Nofrendo.txt"
+    },
+    {
+      "name": "New MHS Prism+ C64 receiving and relocation contributions",
+      "artifact": "client.crt",
+      "artifactSha256": "067b039d6d45343c09c4850391587d2b51f29e3ea2195d923c2f7c9d76982835",
+      "license": "LICENSE-PRISM-PLUS.txt",
+      "sourcePublic": false,
+      "scope": "Only the original MHS contributions in the listed source components, with earlier grants and separately licensed code preserved.",
+      "coveredSourceComponents": [
+        "nes/tools/nes_prism_plus.mjs",
+        "experiments/prism-native/dense-double-client.mjs",
+        "experiments/prism-native/dense-double-linker.mjs",
+        "experiments/prism-native/dense-double-layout.mjs"
+      ]
+    },
+    {
+      "name": "Earlier MHS C64 client infrastructure",
+      "artifact": "client.crt",
+      "license": "LICENSE-MHS.txt",
+      "scope": "Previously MIT-licensed client infrastructure; excluded from Prism+ restrictions."
+    },
+    {
+      "name": "Earlier display-component notice",
+      "license": "LICENSE-DISPLAY-COMPONENTS.txt",
+      "scope": "Retained for the earlier public client archive; its MIT rights remain unchanged."
+    }
+  ],
+  "compactPrismFirmware": "1.3.36",
+  "sourceSnapshot": "NESVM-source.zip",
+  "qualification": "qualification.json"
+}

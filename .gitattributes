@@ -1,0 +1,31 @@
+# Component receipts and downloadable files bind exact bytes on every platform.
+* -text
+*.zip binary
+*.mpe binary
+*.trh binary
+*.uf2 binary
+*.upd binary
+*.crt binary
+*.mvm binary
+
+# Automatic repository archives contain support files, not implementation code.
+/.github export-ignore
+/.github/** export-ignore
+/AGENTS.md export-ignore
+*.c export-ignore
+*.cpp export-ignore
+*.cxx export-ignore
+*.h export-ignore
+*.hpp export-ignore
+*.py export-ignore
+*.mjs export-ignore
+*.js export-ignore
+*.ps1 export-ignore
+*.sh export-ignore
+*.bat export-ignore
+*.asm export-ignore
+*.s export-ignore
+*.patch export-ignore
+*.yml export-ignore
+*.yaml export-ignore
+*-source.zip export-ignore

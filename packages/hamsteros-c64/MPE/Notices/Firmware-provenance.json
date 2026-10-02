@@ -1,0 +1,20 @@
+{
+  "firmware": "1.4.6",
+  "profile": "atlantis-pcm8",
+  "desktop": "1.4.6",
+  "firmwareSha256": "ad2601c52f535d55b39320f963169bf86b6368accff1af7e637ceb7883cc6cf8",
+  "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
+  "service": 262144,
+  "physicalAcceptance": false,
+  "qualification": "Release-qualification.json",
+  "easyFlashSizesMiB": [
+    1,
+    2,
+    4
+  ],
+  "easyFlashReadOnly": true,
+  "easyFlashExperimental": true,
+  "easyFlashQualification": "EasyFlash-qualification.json",
+  "gameLaunchQualification": "Game-launch-qualification.json",
+  "version": "1.4.6"
+}

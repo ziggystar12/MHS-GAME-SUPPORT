@@ -1,0 +1,697 @@
+{
+  "release": "support-2026.10.01-current",
+  "publicVmIds": [
+    "NESVM"
+  ],
+  "releaseAssets": [
+    "MPE-Host.zip",
+    "KFF2-Support.zip",
+    "A8PicoCart-Support.zip",
+    "NESVM.zip",
+    "DOOMVM.zip"
+  ],
+  "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
+  "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
+  "a8FirmwareSha256": "cc5e08bb4feb3c5ab8a32e08aab96819186f354514f91b5a627efbebdd7d5ded",
+  "softwarePassed": true,
+  "physicalAcceptance": false,
+  "commercialGameDataBundled": false,
+  "doomSharewareBundled": true,
+  "files": [
+    {
+      "path": "source/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "firmware/mpe-host/MPE.TRH",
+      "bytes": 322624,
+      "sha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3"
+    },
+    {
+      "path": "firmware/mpe-host/MPE-DEMO.MPE",
+      "bytes": 30283,
+      "sha256": "04d5ae76d39fca0952438d1085ee8d6b93f46425eaad051fc2b7d9147685dff9"
+    },
+    {
+      "path": "firmware/mpe-host/VMS/MPE/engine.mvm",
+      "bytes": 120,
+      "sha256": "c236da04404ecf6d76a53b8ba7fe9a63f4596d08ea4e55a473d4752829ed5981"
+    },
+    {
+      "path": "firmware/mpe-host/VMS/MPE/client.crt",
+      "bytes": 24688,
+      "sha256": "b0f772ef59f135ae7257b14d420a872222fd5de4accca89e5a1f25ce49d913fe"
+    },
+    {
+      "path": "firmware/mpe-host/VMS/MPE/manifest.vmi",
+      "bytes": 38,
+      "sha256": "31ddf4bb5b61da8b37271239ac0cee71f149cadb5ec3e050b44e567bd3a2fa50"
+    },
+    {
+      "path": "firmware/mpe-host/Notices/CRC32-MIT.txt",
+      "bytes": 1105,
+      "sha256": "7041a7de46488bca009b0d82317c9e7bb6634749ed0cd3956a5ef8041664b36e"
+    },
+    {
+      "path": "firmware/mpe-host/Notices/FNET-Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "bfe1e9b746a3bbf96986b8fde493dab0a95e2295fd8504cf0fbf506b517b2eba"
+    },
+    {
+      "path": "firmware/mpe-host/Notices/FNET-NOTICE.txt",
+      "bytes": 201,
+      "sha256": "5a2eb71482ae501ba4960c520ecd743ed1ada12022218db9973d27dbde69d6ce"
+    },
+    {
+      "path": "firmware/mpe-host/Notices/MHS-Prism-Plus-LICENSE.txt",
+      "bytes": 3146,
+      "sha256": "9da0b65c2f381581c0eed5f49702a61b3d35be74f718bb4f7a2790f0c5003093"
+    },
+    {
+      "path": "firmware/mpe-host/Notices/NUFLIX-NOTICES.md",
+      "bytes": 3588,
+      "sha256": "c392d7441aa4c4e39326bd1a4aa3d914f830bd0198038f4df48363328cf6b7cc"
+    },
+    {
+      "path": "firmware/mpe-host/Notices/PJRC.txt",
+      "bytes": 5730,
+      "sha256": "1704ec131deb94db911fff45192a915f65623edccd9a9c53417bc8d8f1861c0c"
+    },
+    {
+      "path": "firmware/mpe-host/Notices/Prism-MIT.txt",
+      "bytes": 1070,
+      "sha256": "1a969dd98763da79faa7d888975880da8529f8eea768fe7cc8f43befe0c2750f"
+    },
+    {
+      "path": "firmware/mpe-host/Notices/SdFat-MIT.txt",
+      "bytes": 1074,
+      "sha256": "f07af78e816ae273bcdba2ba7878892d9192202a0214f10850635ff37daeba4a"
+    },
+    {
+      "path": "firmware/mpe-host/Notices/TeensyROM-MIT.txt",
+      "bytes": 1069,
+      "sha256": "e9fdfceaaa41e4dc9f81745e70e77902f340c54888ef5a9c0c6795acb2e8bf2b"
+    },
+    {
+      "path": "firmware/mpe-host/Notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "firmware/mpe-host/README.md",
+      "bytes": 461,
+      "sha256": "3482cc9ff26288c9c86215cf0925fff83ff4c27980a3c1f2da38431cbd75578d"
+    },
+    {
+      "path": "firmware/mpe-host/VERIFICATION.json",
+      "bytes": 12102,
+      "sha256": "bf1bc5f770b0442098d54f19e165dd4e78534ea553bfc197436f599e4afd3bde"
+    },
+    {
+      "path": "firmware/mpe-host/MANIFEST.json",
+      "bytes": 2838,
+      "sha256": "15eab1b22594c39904dfbf2d856eefeadcfb942a841743e67c59be0b33c25d4a"
+    },
+    {
+      "path": "firmware/teensyrom-plus/TeensyROM+_0.8.0.13_full.hex",
+      "bytes": 5252332,
+      "sha256": "cdea4ae1f7c115cb61fa56f50d8f518011492b7b0e4f08ae638aaefa3ba872ef"
+    },
+    {
+      "path": "firmware/teensyrom-plus/notices/MHS-Prism-Plus-LICENSE.txt",
+      "bytes": 3146,
+      "sha256": "9da0b65c2f381581c0eed5f49702a61b3d35be74f718bb4f7a2790f0c5003093"
+    },
+    {
+      "path": "firmware/teensyrom-plus/notices/NUFLIX-LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "1a969dd98763da79faa7d888975880da8529f8eea768fe7cc8f43befe0c2750f"
+    },
+    {
+      "path": "firmware/teensyrom-plus/notices/NUFLIX-NOTICES.md",
+      "bytes": 3588,
+      "sha256": "c392d7441aa4c4e39326bd1a4aa3d914f830bd0198038f4df48363328cf6b7cc"
+    },
+    {
+      "path": "firmware/teensyrom-plus/notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "firmware/teensyrom-plus/notices/TeensyROM-LICENSE.txt",
+      "bytes": 1069,
+      "sha256": "e9fdfceaaa41e4dc9f81745e70e77902f340c54888ef5a9c0c6795acb2e8bf2b"
+    },
+    {
+      "path": "firmware/teensyrom-plus/notices/USBHost_t36-LICENSE.txt",
+      "bytes": 2445,
+      "sha256": "7f207562aa33ded10fb2915f6ed8b5f980efc8f46997159419b1783ac45b42fc"
+    },
+    {
+      "path": "packages/hamsteros-c64/APPS/HAMNET.APP",
+      "bytes": 40236,
+      "sha256": "632d6b83af2ff2dd8e7659bf073cac6ab7e21c453755dd27b2b9a8d6dea9b1f5"
+    },
+    {
+      "path": "packages/hamsteros-c64/APPS/HAMWRITE.APP",
+      "bytes": 8968,
+      "sha256": "401fd9f569c8e30eab74b223e0bd964ef2faa1276ebf797dc51f05646fadf76b"
+    },
+    {
+      "path": "packages/hamsteros-c64/APPS/IMAGE.APP",
+      "bytes": 10568,
+      "sha256": "bc9f8ea6b079b31b45c06bb2b64544bb4aa905eba2485ee5a2a2592936a175a1"
+    },
+    {
+      "path": "packages/hamsteros-c64/APPS/PAINT.APP",
+      "bytes": 1804,
+      "sha256": "8d6b13b7cc0181bbd0c7f19adf2c037ee1f6d1c1862ce7c7e91fb81dbedbe08d"
+    },
+    {
+      "path": "packages/hamsteros-c64/APPS/SID.APP",
+      "bytes": 22476,
+      "sha256": "a7b3e3d848c07f2161624a658e513e0fbf967935ccb88a6624c8698616f97149"
+    },
+    {
+      "path": "packages/hamsteros-c64/APPS/ZIPZORK.APP",
+      "bytes": 43908,
+      "sha256": "bad21b9b14dd0e98d78462b0318f020cb4352bcd371a22a39dbee4dc37ace0cc"
+    },
+    {
+      "path": "packages/hamsteros-c64/Sys/ESDB-COPYRIGHT.txt",
+      "bytes": 1314,
+      "sha256": "c66c149acc3e093b4b2b0d26177a1a5f25329e47946d7076bb3639cc02cd31d5"
+    },
+    {
+      "path": "packages/hamsteros-c64/Sys/HAMSTEROS.MPE",
+      "bytes": 234537,
+      "sha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426"
+    },
+    {
+      "path": "packages/hamsteros-c64/Sys/Notices/ZipZork-GPL.txt",
+      "bytes": 18321,
+      "sha256": "61b65d8be67f0acb3a370ce0826c073b7c54a5c08b502ed6f7ffec94a300477f"
+    },
+    {
+      "path": "packages/hamsteros-c64/Sys/Notices/ZipZork.txt",
+      "bytes": 1502,
+      "sha256": "f122121eadedb99637c7d3561ed2d42f242680d18867d2131964700e02086e4d"
+    },
+    {
+      "path": "packages/hamsteros-c64/Sys/PROVENANCE.md",
+      "bytes": 2258,
+      "sha256": "97d50b7a2863049049760c0d13747766fa3cf72225b90c9bd6edced4ed883f2b"
+    },
+    {
+      "path": "packages/hamsteros-c64/Sys/SPELL.DAT",
+      "bytes": 217136,
+      "sha256": "e72efc0bc32978712849f0b92f1b78aa3837c060e28661341f1a2c8e4821a984"
+    },
+    {
+      "path": "packages/hamsteros-c64/Sys/SPELL_REPORT.txt",
+      "bytes": 243,
+      "sha256": "26d8d611eb5920643f086173dc082ef3ce3fe032c7e5fcdd0edb584051f8a6be"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/Atlantis-qualification.json",
+      "bytes": 1737,
+      "sha256": "4d3738d764bedb04a81dcfe824469eff7fc097681db511c772ccf02bb2e061f2"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/EasyFlash-qualification.json",
+      "bytes": 1737,
+      "sha256": "4d3738d764bedb04a81dcfe824469eff7fc097681db511c772ccf02bb2e061f2"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/Firmware-provenance.json",
+      "bytes": 611,
+      "sha256": "978b805f8b0e7b0000b0da29d03049c8144dd9db13d60f9065e05f90bac3da0a"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/Focused-desktop-qualification.json",
+      "bytes": 1002,
+      "sha256": "a8dc8639b064af2d9c58fd9d55cb1462a21ddd5d5183860f15a2d1ba73c6f6ad"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/Game-launch-qualification.json",
+      "bytes": 1737,
+      "sha256": "4d3738d764bedb04a81dcfe824469eff7fc097681db511c772ccf02bb2e061f2"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/HamNet-Client-LICENSE.txt",
+      "bytes": 1099,
+      "sha256": "673b4c29dd1efc526634f268632f4c0248879168dd2f02dd4c3876fbc5a95d2b"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/HamsterOS-NOTICE.md",
+      "bytes": 1280,
+      "sha256": "9475bf2e3bb36c8cc0b229c240e36dae52d320945174dc4a4c0eab87157f218f"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/MHS-Prism-Plus-LICENSE.txt",
+      "bytes": 3146,
+      "sha256": "9da0b65c2f381581c0eed5f49702a61b3d35be74f718bb4f7a2790f0c5003093"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/Mouse-update-qualification.json",
+      "bytes": 2074,
+      "sha256": "318ad9bf551404c33e5b413391f9877be7d23ffbab88055cceceba5b550ac583"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/Mouse-update-source.md",
+      "bytes": 835,
+      "sha256": "5a453cdc5b26b73b531011b43c4aba600ce1dc7b75f6ed62de4c63c604fcfdab"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/MUS-GPL-2.0.txt",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/MUS-ORIGIN.md",
+      "bytes": 571,
+      "sha256": "0898220c8821c195efcb85c3aea83819410b162b0ed3aa3f4c98b890eaef5ea7"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/NUFLIX-LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "1a969dd98763da79faa7d888975880da8529f8eea768fe7cc8f43befe0c2750f"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/NUFLIX-NOTICES.md",
+      "bytes": 3588,
+      "sha256": "c392d7441aa4c4e39326bd1a4aa3d914f830bd0198038f4df48363328cf6b7cc"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/Release-qualification.json",
+      "bytes": 1737,
+      "sha256": "4d3738d764bedb04a81dcfe824469eff7fc097681db511c772ccf02bb2e061f2"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/TeensyROM-LICENSE.txt",
+      "bytes": 1069,
+      "sha256": "e9fdfceaaa41e4dc9f81745e70e77902f340c54888ef5a9c0c6795acb2e8bf2b"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/USBHost_t36-LICENSE.txt",
+      "bytes": 2445,
+      "sha256": "7f207562aa33ded10fb2915f6ed8b5f980efc8f46997159419b1783ac45b42fc"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/vrEmu6502-LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "d09de2afb377d29147398264e0cc29cf6f3793221fa90cb3d091be870af91208"
+    },
+    {
+      "path": "packages/hamsteros-c64/Sys/Notices/Spelling.txt",
+      "bytes": 1314,
+      "sha256": "c66c149acc3e093b4b2b0d26177a1a5f25329e47946d7076bb3639cc02cd31d5"
+    },
+    {
+      "path": "packages/hamsteros-c64/MPE/Notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "packages/hamsteros-c64/Sys/Notices/ZipZork-source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "packages/hamsteros-c64/README.txt",
+      "bytes": 333,
+      "sha256": "4de4b491118ca8ef3bc6f4c8dd879a73c397770e8461ad09db013d55dcbab096"
+    },
+    {
+      "path": "packages/hamsteros-c64/MANIFEST.json",
+      "bytes": 5911,
+      "sha256": "fbb86ca6015e69530a2629692ee680408008ed597f1e70c0213d3d7ca8134e18"
+    },
+    {
+      "path": "packages/c64/NESVM.MPE",
+      "bytes": 249386,
+      "sha256": "0512b1e24efc7113a84cd26fe19749f91fa6d17f394486e4b2c027b2fc8e8f7a"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/COMPONENTS.json",
+      "bytes": 1743,
+      "sha256": "a105297985bbec4e1c520998fe5b0c8c7739220683bfd2dc784649a471b4e7a8"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/LICENSE-DISPLAY-COMPONENTS.txt",
+      "bytes": 1070,
+      "sha256": "1a969dd98763da79faa7d888975880da8529f8eea768fe7cc8f43befe0c2750f"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/LICENSE-MHS.txt",
+      "bytes": 1614,
+      "sha256": "ee8b08eaa84b387fc610c16665c465932048ce0dc85dc89590b53e10bf8edbab"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/LICENSE-Nofrendo.txt",
+      "bytes": 25270,
+      "sha256": "cc535c21133c895b56b374c8a1dc1eb948d99003ed2b47372069456b62f42b24"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/LICENSE-PRISM-PLUS.txt",
+      "bytes": 3146,
+      "sha256": "9da0b65c2f381581c0eed5f49702a61b3d35be74f718bb4f7a2790f0c5003093"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/NOTICES.md",
+      "bytes": 2885,
+      "sha256": "d44e1072bccb116bd60c77c16ea508d4743f107eceac330a685342a0f0cb6bab"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/qualification.json",
+      "bytes": 828,
+      "sha256": "adf4e8677c30867c2e330357a790828864424af3a8cb9cb9a7b2e2591f8c6f2e"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/README.md",
+      "bytes": 565,
+      "sha256": "783f17e52f87aaf8192d3b5ae009cea6af0d75d80752ae8dd6c034530c27e545"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/version.json",
+      "bytes": 206,
+      "sha256": "040baa9941bc6ba5ca0794437fcad144fcd12d49a3f28adee168a71a4dc4c90f"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/ROMS/README.txt",
+      "bytes": 95,
+      "sha256": "ccd8da80365def1ccc551990f6e142a3ff8c8ad75bfec485f94272b5698d14a8"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/SAVES/README.txt",
+      "bytes": 96,
+      "sha256": "11817c4e76d6ded7d1de09936375fe2a76c27fd375b095bb3c9f5ff0dcd14b2d"
+    },
+    {
+      "path": "packages/c64/VMS/NESVM/MPE-README.txt",
+      "bytes": 198,
+      "sha256": "e4315b68cfdd3f6cc680028ab77f348ff88eca319b9b7f6e2ed9359b6efef049"
+    },
+    {
+      "path": "packages/doomvm/DOOMVM.MPE",
+      "bytes": 5708752,
+      "sha256": "2ad8f63c2de6c5dba6630bc9f89c7967633ce5c44b905eb8875617df37780b8e"
+    },
+    {
+      "path": "packages/doomvm/README.txt",
+      "bytes": 288,
+      "sha256": "b57626ef702cbda826ee6c67289016c391c0f1bde030bd658e9017e546e52579"
+    },
+    {
+      "path": "packages/doomvm/Notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "packages/doomvm/Notices/COPYING.GPL",
+      "bytes": 17989,
+      "sha256": "b8a2f73f743dc1a51aff23f1aacbca4b868564db52496fa3c0caba755bfd1eaf"
+    },
+    {
+      "path": "packages/doomvm/Notices/GAME-LICENSE.TXT",
+      "bytes": 7657,
+      "sha256": "d4fa5c81f319a7265d06ae1e047422187c2774cfc6a41c61b173c8f3eea30f9c"
+    },
+    {
+      "path": "packages/doomvm/Notices/NOTICES.TXT",
+      "bytes": 1867,
+      "sha256": "beabb940c33fc3a44d14efa7be5e60abb042a7988d30300dcda05954e6dad439"
+    },
+    {
+      "path": "packages/a8picocart/A8PicoCart-MPE.uf2",
+      "bytes": 1145344,
+      "sha256": "cc5e08bb4feb3c5ab8a32e08aab96819186f354514f91b5a627efbebdd7d5ded"
+    },
+    {
+      "path": "packages/a8picocart/HAMSTEROS.MPE",
+      "bytes": 15068,
+      "sha256": "fee5e0f2e69275f330edfc2e5e946e6a6f50c13e560d4b02d3bdbc024131c9aa"
+    },
+    {
+      "path": "packages/a8picocart/DOOM.MPE",
+      "bytes": 1844817,
+      "sha256": "1319b066f9e569a6e05c024fb0defab6e2117e82238997fe4a495a22d5c5a896"
+    },
+    {
+      "path": "packages/a8picocart/SYS/NOTEPAD.APP",
+      "bytes": 3011,
+      "sha256": "367f0eb8dbcdfc65becef1656032a612651076e7fe9572478dde3f2cc4f653d2"
+    },
+    {
+      "path": "packages/a8picocart/SYS/CALC.APP",
+      "bytes": 727,
+      "sha256": "d711e5e4e42b2ff49f2903321fa410631f9c24b1382667e7fbcb5e890f5491aa"
+    },
+    {
+      "path": "packages/a8picocart/SYS/SNAKE.APP",
+      "bytes": 1304,
+      "sha256": "fe818635b5666c431b23a99aeb16a310cc8ac34363afbad3d35ec6f097929531"
+    },
+    {
+      "path": "packages/a8picocart/SYS/PAINT.APP",
+      "bytes": 1890,
+      "sha256": "05ee6fbe4fe7543db078036d64650755ee77d1db6ce7ac8199a46dda4f20a76f"
+    },
+    {
+      "path": "packages/a8picocart/SYS/IMAGE.APP",
+      "bytes": 732,
+      "sha256": "8813315dcf432ec86ebc26d5d0ca112ce548bb5d4f88e34734a6816a39eee992"
+    },
+    {
+      "path": "packages/a8picocart/SYS/IMAGE.LIB",
+      "bytes": 12640,
+      "sha256": "816ae9e7f162ba80354db99702329415b8b1a173333575bea8bf3e2887f63f63"
+    },
+    {
+      "path": "packages/a8picocart/Atari-File-Formats.md",
+      "bytes": 2632,
+      "sha256": "3044974762ea3a57cc2691bc1528f0e4c7355cfca72c5143e63cb49023ce9db0"
+    },
+    {
+      "path": "packages/a8picocart/Notices/7800-LICENSE-TiaSound.txt",
+      "bytes": 25270,
+      "sha256": "cc535c21133c895b56b374c8a1dc1eb948d99003ed2b47372069456b62f42b24"
+    },
+    {
+      "path": "packages/a8picocart/Notices/7800-LICENSE.txt",
+      "bytes": 18347,
+      "sha256": "9fae8c2ae211ea4b3515621484bb0a558a0ca62d05c9534265c7e223bdf981b0"
+    },
+    {
+      "path": "packages/a8picocart/Notices/Doom-COPYING.md",
+      "bytes": 18256,
+      "sha256": "82d744fd900cc0643305f82d37439868158de3d155b60e1c5ae3633c21bbc778"
+    },
+    {
+      "path": "packages/a8picocart/Notices/HamsterOS-A8/A8-APP-SERVICES.md",
+      "bytes": 5999,
+      "sha256": "9482717cb974c7edeb8e96b746cf17215fa63aa90d27641d5661b54319986cbf"
+    },
+    {
+      "path": "packages/a8picocart/Notices/HamsterOS-A8/NOTICE.md",
+      "bytes": 2129,
+      "sha256": "93f376ea353e07868aff523f7a4ab194d8ca723f696e8f3fbb6870112f7aa809"
+    },
+    {
+      "path": "packages/a8picocart/Notices/HamsterOS-A8/README.md",
+      "bytes": 5325,
+      "sha256": "b876de71dcf4a50dcc442714fcca2212610c5ad97e30246bccd054d7e90dbc6d"
+    },
+    {
+      "path": "packages/a8picocart/Notices/Image-Codecs-LICENSE.txt",
+      "bytes": 1099,
+      "sha256": "673b4c29dd1efc526634f268632f4c0248879168dd2f02dd4c3876fbc5a95d2b"
+    },
+    {
+      "path": "packages/a8picocart/Notices/Image-Codecs-ORIGIN.md",
+      "bytes": 639,
+      "sha256": "37efe08eced12ab832d47ebdc7d672829757cb78524793105b95dd87b05ea38c"
+    },
+    {
+      "path": "packages/a8picocart/Notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "packages/a8picocart/README.txt",
+      "bytes": 724,
+      "sha256": "cc2b5303dc0f628528d9f386864bb264055920ffea408c4294bb45567c10dc7c"
+    },
+    {
+      "path": "packages/a8picocart/MANIFEST.json",
+      "bytes": 3578,
+      "sha256": "e523e9c1f9569b17867dd4a9957448fffb3d3965f3a8dc134bb79cb76cf2e631"
+    },
+    {
+      "path": "firmware/a8picocart/A8PicoCart-MPE.uf2",
+      "bytes": 1145344,
+      "sha256": "cc5e08bb4feb3c5ab8a32e08aab96819186f354514f91b5a627efbebdd7d5ded"
+    },
+    {
+      "path": "firmware/kff2/KungFuFlash_v2.H24.upd",
+      "bytes": 131072,
+      "sha256": "b644cbdc7672ca3c8c4c1b8b9288fe0b132ae6efb877b1b4e2b359504aba6498"
+    },
+    {
+      "path": "firmware/kff2/Sys/Notices/KFF2-qualification.json",
+      "bytes": 1295,
+      "sha256": "ef5459cbe52885f7e70fbf1162b77e06f62c7c6071e65958ec59ff2a8f08673e"
+    },
+    {
+      "path": "firmware/kff2/Sys/Notices/H24-ACCEPTANCE.json",
+      "bytes": 632,
+      "sha256": "583e70e75d381af564081e206c36dc8042b042c2c401879667fce327877eabc0"
+    },
+    {
+      "path": "firmware/kff2/Sys/Notices/H24-QUALIFICATION.json",
+      "bytes": 1295,
+      "sha256": "ef5459cbe52885f7e70fbf1162b77e06f62c7c6071e65958ec59ff2a8f08673e"
+    },
+    {
+      "path": "firmware/kff2/Sys/Notices/HamsterOS-NOTICE.md",
+      "bytes": 1127,
+      "sha256": "cba9b0f8aa6c67496a49ee30d3593f8c11af3cc332f0df37502995805db5a299"
+    },
+    {
+      "path": "firmware/kff2/Sys/Notices/Kung-Fu-Flash-LICENSE.txt",
+      "bytes": 871,
+      "sha256": "a02bdff13d0dde661fbd8c0a93ac57fab181b28973a3c0dce45f0f45f3a8812a"
+    },
+    {
+      "path": "firmware/kff2/Sys/Notices/MHS-Prism-Plus-LICENSE.txt",
+      "bytes": 3146,
+      "sha256": "9da0b65c2f381581c0eed5f49702a61b3d35be74f718bb4f7a2790f0c5003093"
+    },
+    {
+      "path": "firmware/kff2/Sys/Notices/MUS-GPL-2.0.txt",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "firmware/kff2/Sys/Notices/MUS-ORIGIN.md",
+      "bytes": 571,
+      "sha256": "0898220c8821c195efcb85c3aea83819410b162b0ed3aa3f4c98b890eaef5ea7"
+    },
+    {
+      "path": "firmware/kff2/Sys/Notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "firmware/kff2/Sys/Notices/vrEmu6502-LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "d09de2afb377d29147398264e0cc29cf6f3793221fa90cb3d091be870af91208"
+    },
+    {
+      "path": "packages/hamsteros-kff2/APPS/IMAGE.APP",
+      "bytes": 10568,
+      "sha256": "bc9f8ea6b079b31b45c06bb2b64544bb4aa905eba2485ee5a2a2592936a175a1"
+    },
+    {
+      "path": "packages/hamsteros-kff2/APPS/PAINT.APP",
+      "bytes": 1804,
+      "sha256": "8d6b13b7cc0181bbd0c7f19adf2c037ee1f6d1c1862ce7c7e91fb81dbedbe08d"
+    },
+    {
+      "path": "packages/hamsteros-kff2/APPS/SID.APP",
+      "bytes": 22476,
+      "sha256": "a7b3e3d848c07f2161624a658e513e0fbf967935ccb88a6624c8698616f97149"
+    },
+    {
+      "path": "packages/hamsteros-kff2/APPS/ZIPZORK.APP",
+      "bytes": 43908,
+      "sha256": "bad21b9b14dd0e98d78462b0318f020cb4352bcd371a22a39dbee4dc37ace0cc"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/HAMSTEROS.MPE",
+      "bytes": 211269,
+      "sha256": "54dbc037793a871499f09c5ba7717033f59ade1dcea0560f5217af489c63e470"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/EasyFlash-qualification.json",
+      "bytes": 3186,
+      "sha256": "f536f59787a2aeb5bd4b75de1c3884753259dd7a7731b647d6bced2d07a96dd4"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/HamsterOS-NOTICE.md",
+      "bytes": 1127,
+      "sha256": "cba9b0f8aa6c67496a49ee30d3593f8c11af3cc332f0df37502995805db5a299"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/KFF2-qualification.json",
+      "bytes": 1295,
+      "sha256": "ef5459cbe52885f7e70fbf1162b77e06f62c7c6071e65958ec59ff2a8f08673e"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/Kung-Fu-Flash-LICENSE.txt",
+      "bytes": 871,
+      "sha256": "a02bdff13d0dde661fbd8c0a93ac57fab181b28973a3c0dce45f0f45f3a8812a"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/MHS-Prism-Plus-LICENSE.txt",
+      "bytes": 3146,
+      "sha256": "9da0b65c2f381581c0eed5f49702a61b3d35be74f718bb4f7a2790f0c5003093"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/MUS-GPL-2.0.txt",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/MUS-ORIGIN.md",
+      "bytes": 488,
+      "sha256": "4b98f83b4df4346152869d958eb5e9fca240a50f62da15a8f4a2cebf9e2cedb6"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/vrEmu6502-LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "d09de2afb377d29147398264e0cc29cf6f3793221fa90cb3d091be870af91208"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/ZipZork-GPL.txt",
+      "bytes": 18321,
+      "sha256": "61b65d8be67f0acb3a370ce0826c073b7c54a5c08b502ed6f7ffec94a300477f"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/ZipZork-source-offer.txt",
+      "bytes": 987,
+      "sha256": "c41d3a624e2b808869e4fd4c0686ff76aef897dd246fddaced462e97313a4750"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/ZipZork.txt",
+      "bytes": 1502,
+      "sha256": "f122121eadedb99637c7d3561ed2d42f242680d18867d2131964700e02086e4d"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/PROVENANCE.md",
+      "bytes": 2258,
+      "sha256": "97d50b7a2863049049760c0d13747766fa3cf72225b90c9bd6edced4ed883f2b"
+    },
+    {
+      "path": "packages/hamsteros-kff2/Sys/Notices/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    },
+    {
+      "path": "packages/hamsteros-kff2/README.txt",
+      "bytes": 268,
+      "sha256": "a02afce72f3e0d1741d9ce3d26ec62b3853d8e1c13cf8e2515ccff8dd240e8e5"
+    },
+    {
+      "path": "packages/hamsteros-kff2/MANIFEST.json",
+      "bytes": 3203,
+      "sha256": "17fa638d1eaf8ee0214adef9c4f4ed6a3b055beec323ccb1d232e4869ca26b77"
+    },
+    {
+      "path": "packages/c64/Source-offer.txt",
+      "bytes": 740,
+      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+    }
+  ]
+}

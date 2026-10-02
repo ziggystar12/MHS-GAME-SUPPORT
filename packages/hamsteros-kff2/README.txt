@@ -1,0 +1,1 @@
+KFF2 HamsterOS and matching applications from the checked compiler baseline. Install the accepted H24 firmware, copy Sys and APPS to the SD root, and launch Sys/HAMSTEROS.MPE. Preserve games, settings and saves. This KFF2 desktop uses its device-specific KFP1 format.

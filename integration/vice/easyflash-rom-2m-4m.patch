@@ -1,0 +1,213 @@
+--- a/src/c64/cart/easyflash.c
++++ b/src/c64/cart/easyflash.c
+@@ -52,7 +52,10 @@
+ #include "snapshot.h"
+ #include "util.h"
+ 
+-#define EASYFLASH_N_BANK_BITS 6
++/* Proposed read-only 2/4MB bank extension; classic 1MB flash is unchanged. */
++#define EASYFLASH_MAX_BANKS 256
++static uint8_t easyflash_bank_bits = 6;
++#define EASYFLASH_N_BANK_BITS easyflash_bank_bits
+ #define EASYFLASH_N_BANKS     (1 << (EASYFLASH_N_BANK_BITS))
+ #define EASYFLASH_BANK_MASK   ((EASYFLASH_N_BANKS) -1)
+ 
+@@ -326,7 +329,7 @@
+     int i;
+ 
+     for (i = 0; i < chip->size; i++) {
+-        if ((data[i] != 0xff) || (easyflash_crt_optimize == 0)) {
++        if ((data[i] != 0xff) || (easyflash_crt_optimize == 0) || (EASYFLASH_N_BANKS > 64 && chip->bank == EASYFLASH_N_BANKS - 1)) {
+             if (crt_write_chip(data, chip, fd)) {
+                 return -1;
+             }
+@@ -391,21 +394,25 @@
+ 
+ uint8_t easyflash_roml_read(uint16_t addr)
+ {
++    if (EASYFLASH_N_BANKS > 64) return roml_banks[(easyflash_register_00 * 0x2000) + (addr & 0x1fff)];
+     return flash040core_read(easyflash_state_low, (easyflash_register_00 * 0x2000) + (addr & 0x1fff));
+ }
+ 
+ void easyflash_roml_store(uint16_t addr, uint8_t value)
+ {
++    if (EASYFLASH_N_BANKS > 64) return;
+     flash040core_store(easyflash_state_low, (easyflash_register_00 * 0x2000) + (addr & 0x1fff), value);
+ }
+ 
+ uint8_t easyflash_romh_read(uint16_t addr)
+ {
++    if (EASYFLASH_N_BANKS > 64) return romh_banks[(easyflash_register_00 * 0x2000) + (addr & 0x1fff)];
+     return flash040core_read(easyflash_state_high, (easyflash_register_00 * 0x2000) + (addr & 0x1fff));
+ }
+ 
+ void easyflash_romh_store(uint16_t addr, uint8_t value)
+ {
++    if (EASYFLASH_N_BANKS > 64) return;
+     flash040core_store(easyflash_state_high, (easyflash_register_00 * 0x2000) + (addr & 0x1fff), value);
+ }
+ 
+@@ -498,6 +505,10 @@
+     /*
+      * check for presence of EAPI
+      */
++    if (EASYFLASH_N_BANKS > 64) {
++        log_message(LOG_DEFAULT, "EF: experimental %uKB read-only ROM", EASYFLASH_N_BANKS * 16);
++        return;
++    }
+     if (memcmp(&romh_banks[0x1800], "eapi", 4) == 0) {
+         char eapi[17];
+         int k;
+@@ -531,10 +542,22 @@
+ int easyflash_bin_attach(const char *filename, uint8_t *rawcart)
+ {
+     easyflash_filetype = 0;
++    FILE *size_file = fopen(filename, "rb");
++    long size;
++    if (!size_file) return -1;
++    if (fseek(size_file, 0, SEEK_END)) { fclose(size_file); return -1; }
++    size = ftell(size_file);
++    fclose(size_file);
++    if (size == 0x100000 || size == 0x100002) easyflash_bank_bits = 6;
++    else if (size == 0x200000 || size == 0x200002) easyflash_bank_bits = 7;
++    else if (size == 0x400000 || size == 0x400002) easyflash_bank_bits = 8;
++    else return -1;
+ 
+     if (util_file_load(filename, rawcart, 0x4000 * EASYFLASH_N_BANKS, UTIL_FILE_LOAD_SKIP_ADDRESS) < 0) {
+         return -1;
+     }
++
++    if (EASYFLASH_N_BANKS > 64 && memcmp(rawcart + 0x3800, "eapi", 4) == 0) return -1;
+ 
+     easyflash_filetype = CARTRIDGE_FILETYPE_BIN;
+     return easyflash_common_attach(filename);
+@@ -543,24 +566,40 @@
+ int easyflash_crt_attach(FILE *fd, uint8_t *rawcart, const char *filename)
+ {
+     crt_chip_header_t chip;
+-
++    unsigned highest = 0, chips = 0;
++    uint8_t seen[EASYFLASH_MAX_BANKS][2] = {{0}};
++    long start = ftell(fd), end;
++    if (fseek(fd, 0, SEEK_END)) return -1;
++    end = ftell(fd);
++    if (end < start || fseek(fd, start, SEEK_SET)) return -1;
++    easyflash_bank_bits = 6;
+     easyflash_filetype = 0;
+-    memset(rawcart, 0xff, 0x100000); /* empty flash */
++    memset(rawcart, 0xff, 0x400000); /* empty flash */
+ 
+     while (1) {
+-        if (crt_read_chip_header(&chip, fd)) {
+-            break;
++        long position = ftell(fd);
++        if (position == end) break;
++        if (position > end || crt_read_chip_header(&chip, fd)) return -1;
++        if (chip.bank >= EASYFLASH_MAX_BANKS || (chip.type != 0 && chip.type != 2)) return -1;
++        unsigned half = chip.start != 0x8000;
++        if (seen[chip.bank][half]) return -1;
++        seen[chip.bank][half] = 1;
++        if (chip.size == 0x4000) {
++            if (seen[chip.bank][1]) return -1;
++            seen[chip.bank][1] = 1;
+         }
++        if (highest < chip.bank) highest = chip.bank;
++        chips++;
+ 
+         if (chip.size == 0x2000) {
+-            if (chip.bank >= EASYFLASH_N_BANKS || !(chip.start == 0x8000 || chip.start == 0xa000 || chip.start == 0xe000)) {
++            if (chip.bank >= EASYFLASH_MAX_BANKS || !(chip.start == 0x8000 || chip.start == 0xa000 || chip.start == 0xe000)) {
+                 return -1;
+             }
+             if (crt_read_chip(rawcart, (chip.bank << 14) | (chip.start & 0x2000), &chip, fd)) {
+                 return -1;
+             }
+         } else if (chip.size == 0x4000) {
+-            if (chip.bank >= EASYFLASH_N_BANKS || chip.start != 0x8000) {
++            if (chip.bank >= EASYFLASH_MAX_BANKS || chip.start != 0x8000) {
+                 return -1;
+             }
+             if (crt_read_chip(rawcart, chip.bank << 14, &chip, fd)) {
+@@ -571,6 +610,9 @@
+         }
+     }
+ 
++    if (!chips) return -1;
++    easyflash_bank_bits = highest >= 128 ? 8 : (highest >= 64 ? 7 : 6);
++    if (EASYFLASH_N_BANKS > 64 && memcmp(rawcart + 0x3800, "eapi", 4) == 0) return -1;
+     easyflash_filetype = CARTRIDGE_FILETYPE_CRT;
+     return easyflash_common_attach(filename);
+ }
+@@ -691,7 +733,7 @@
+ static const char snap_module_name[] = "CARTEF";
+ static const char flash_snap_module_name[] = "FLASH040EF";
+ #define SNAP_MAJOR   0
+-#define SNAP_MINOR   0
++#define SNAP_MINOR   1
+ 
+ int easyflash_snapshot_write_module(snapshot_t *s)
+ {
+@@ -704,21 +746,22 @@
+     }
+ 
+     if (0
++        || (SMW_B(m, easyflash_bank_bits) < 0)
+         || (SMW_B(m, (uint8_t)easyflash_jumper) < 0)
+         || (SMW_B(m, easyflash_register_00) < 0)
+         || (SMW_B(m, easyflash_register_02) < 0)
+         || (SMW_BA(m, easyflash_ram, CART_RAM_SIZE) < 0)
+-        || (SMW_BA(m, roml_banks, 0x80000) < 0)
+-        || (SMW_BA(m, romh_banks, 0x80000) < 0)) {
++        || (SMW_BA(m, roml_banks, 0x2000 * EASYFLASH_N_BANKS) < 0)
++        || (SMW_BA(m, romh_banks, 0x2000 * EASYFLASH_N_BANKS) < 0)) {
+         snapshot_module_close(m);
+         return -1;
+     }
+ 
+     snapshot_module_close(m);
+ 
+-    if (0
++    if (EASYFLASH_N_BANKS <= 64 && (0
+         || (flash040core_snapshot_write_module(s, easyflash_state_low, flash_snap_module_name) < 0)
+-        || (flash040core_snapshot_write_module(s, easyflash_state_high, flash_snap_module_name) < 0)) {
++        || (flash040core_snapshot_write_module(s, easyflash_state_high, flash_snap_module_name) < 0))) {
+         return -1;
+     }
+ 
+@@ -740,17 +783,22 @@
+         snapshot_set_error(SNAPSHOT_MODULE_HIGHER_VERSION);
+         goto fail;
+     }
++
++    easyflash_bank_bits = 6;
++    if (vminor >= 1 && SMR_B(m, &easyflash_bank_bits) < 0) goto fail;
++    if (easyflash_bank_bits < 6 || easyflash_bank_bits > 8) goto fail;
+ 
+     if (0
+         || (SMR_B_INT(m, &easyflash_jumper) < 0)
+         || (SMR_B(m, &easyflash_register_00) < 0)
+         || (SMR_B(m, &easyflash_register_02) < 0)
+         || (SMR_BA(m, easyflash_ram, CART_RAM_SIZE) < 0)
+-        || (SMR_BA(m, roml_banks, 0x80000) < 0)
+-        || (SMR_BA(m, romh_banks, 0x80000) < 0)) {
++        || (SMR_BA(m, roml_banks, 0x2000 * EASYFLASH_N_BANKS) < 0)
++        || (SMR_BA(m, romh_banks, 0x2000 * EASYFLASH_N_BANKS) < 0)) {
+         goto fail;
+     }
+ 
++    easyflash_register_00 &= EASYFLASH_BANK_MASK;
+     snapshot_module_close(m);
+ 
+     easyflash_state_low = lib_malloc(sizeof(flash040_context_t));
+@@ -759,9 +807,9 @@
+     flash040core_init(easyflash_state_low, maincpu_alarm_context, FLASH040_TYPE_B, roml_banks);
+     flash040core_init(easyflash_state_high, maincpu_alarm_context, FLASH040_TYPE_B, romh_banks);
+ 
+-    if (0
++    if (EASYFLASH_N_BANKS <= 64 && (0
+         || (flash040core_snapshot_read_module(s, easyflash_state_low, flash_snap_module_name) < 0)
+-        || (flash040core_snapshot_read_module(s, easyflash_state_low, flash_snap_module_name) < 0)) {
++        || (flash040core_snapshot_read_module(s, easyflash_state_high, flash_snap_module_name) < 0))) {
+         flash040core_shutdown(easyflash_state_low);
+         flash040core_shutdown(easyflash_state_high);
+         lib_free(easyflash_state_low);

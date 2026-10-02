@@ -1,0 +1,26 @@
+# Frotz core (vendored)
+
+Files in `core/` are the platform-neutral Frotz 2.40 interpreter core from
+David Kinder's Windows-Frotz repository, imported from `E:\MHS-Repository\HamsterOS\third_party\windows-frotz\Generic`:
+
+- Source: https://github.com/DavidKinder/Windows-Frotz
+- Imported commit: d8dbf318fc96daf9707eb7ab698f54dee3b534bb
+- License: GNU GPL version 2 or later; see COPYING in this directory.
+
+HamsterOS_C64 supplies its own screen, keyboard, file, memory, timer and
+graphics adapter for this core in `src/hos_zork_port.c` and `src/hos_zork_globals.c`.
+This vendored copy is kept separate so provenance and license stay explicit,
+matching the precedent already used for the PC HamsterOS ZipZork port (see
+`third_party/windows-frotz/README.HAMSTEROS.md` in the HamsterOS repository).
+
+Zip Zork classic (this port) supports Z-machine versions 1-6 via this core.
+It is distinct from "Zip Zork X", the separate Z10-capable Windows/Mac
+product in the ZorkZip repository, which is out of scope for this port.
+
+Local patch: `core/fastmem.c` clears the save result when closing the save file
+fails. Otherwise an atomic-write failure could be reported to the story as a
+successful save. All other core files retain their imported contents.
+
+The adapter uses the general HamsterOS application ABI; no app-specific host
+imports are required. The corresponding-source ZIP includes its build entry
+point, SDK headers, worker, adapter, interpreter and this license/provenance.

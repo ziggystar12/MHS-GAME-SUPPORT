@@ -1,0 +1,17 @@
+{
+  "firmwareVersion": "2.H24",
+  "updaterSha256": "b644cbdc7672ca3c8c4c1b8b9288fe0b132ae6efb877b1b4e2b359504aba6498",
+  "date": "2026-09-30",
+  "reportedBy": "John / Mean Hamster Software",
+  "hardware": "Kung Fu Flash 2",
+  "ownerReport": "commit and sync - this works",
+  "acceptedScope": [
+    "SPECIAL opens the classic browser with a visible directory listing",
+    "Automatic alphabetical order with directories first",
+    "Light-blue directory text",
+    "Title and F1 Help fit on screen"
+  ],
+  "extendedCrtScenarioReported": false,
+  "completeGamePlaythroughReported": false,
+  "manualContributionUpdaterTested": false
+}

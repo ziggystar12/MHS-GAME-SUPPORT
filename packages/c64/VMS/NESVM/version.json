@@ -1,0 +1,9 @@
+{
+  "product": "NESVM",
+  "version": "1.2.3-mapper90",
+  "minimumFirmwareVersion": "1.3.36",
+  "firmwareIncluded": false,
+  "releaseDate": "2026-09-30",
+  "candidate": true,
+  "physicalAcceptance": false
+}

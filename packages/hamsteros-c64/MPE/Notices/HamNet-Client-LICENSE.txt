@@ -1,0 +1,23 @@
+HamNet+ Client License
+
+Copyright (c) 2026 Mean Hamster Software. All rights reserved.
+
+HamNet+, the native client source code, artwork, and documentation are
+proprietary software owned by Mean Hamster Software.
+
+You may install and use an unmodified copy of the HamNet+ client to access the
+Mean Hamster service under the terms provided with that service. You may make
+reasonable backup copies for your own use.
+
+You may not redistribute, sell, sublicense, reverse engineer, or publish this
+software or its source code without prior written permission from Mean Hamster
+Software, except where applicable law expressly permits otherwise.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL MEAN
+HAMSTER SOFTWARE BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING
+FROM USE OF THE SOFTWARE.
+
+Third-party components remain under their own licenses. See the LICENSES
+directory in a release package.

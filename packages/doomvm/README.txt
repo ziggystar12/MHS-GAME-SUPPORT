@@ -1,0 +1,1 @@
+Launch DOOMVM.MPE with the matching MPE host or KFF2 firmware. This portable package includes the Doom 1.9 shareware episode, under its separate game license. Replace the MPE to update the player; preserve Saves. Additional games and original-game conversion are offered in Power Engine.

@@ -1,0 +1,1 @@
+Install the matching MPE.TRH host and stock firmware first. Copy Sys, APPS and MPE to your SD root, preserving games and saves. Launch Sys/HAMSTEROS.MPE. This set includes all six matching apps and the optional HamWrite spelling dictionary. Updated host software checks pass; this exact revised host still needs physical acceptance.

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "applicationVersion": "2.0.4",
+  "profile": "teensy-hamsteros-1.3.44",
+  "firmwareVersion": "1.3.44",
+  "desktopVersion": "0.1.0-dev34",
+  "firmwareSha256": "e30d555098e4c3b2a56b8dd3bc0548ca41103a2c6c4bbea532711b2a08361bdb",
+  "applicationsZipSha256": "b0dfb0a0f0cc0f10b975b49769586f86eeb649d65e1db3d29e885756711aa452",
+  "desktopSha256": "2486da98157390fde22f4642ac188de886f36db582eac8adf8b709d5dba085f4",
+  "sourceArchive": {
+    "path": "sources/HamsterOS-MUS-1.3.44-source.zip",
+    "sha256": "7d1c03e9caffddb7ecc717b310201035c3db46ec66f79f399eccb93bbd7636ff",
+    "bytes": 18567,
+    "files": [
+      "desktop/hamsteros/scripts/build-mus-drivers.mjs",
+      "desktop/hamsteros/vendor/mus/COPYING",
+      "desktop/hamsteros/vendor/mus/ORIGIN.md",
+      "desktop/hamsteros/vendor/mus/sidplayer1.a65",
+      "desktop/hamsteros/vendor/mus/sidplayer2.a65"
+    ],
+    "preservedByteForByte": true,
+    "matchesPrivateCandidate": true,
+    "privateSnapshotPublished": false
+  },
+  "privateSourceSnapshotSha256": "92cd72a4e5721d83a2ef00348698987df59bf170f0476b8d245b017c7f61d0b0",
+  "sourceQualificationSha256": "7350dd4cd931bf8d0007cc49e61e2e8028bf32bd4f35bc6f1dab9d70abf3989b",
+  "monkeySchedulerInputsMatch": true,
+  "monkeySchedulerQualificationSha256": "752d0015dc4727dc84a26f7493f753350f2c6c323626e95cdbb84b17c1518c34",
+  "softwareChecks": {
+    "root": 17,
+    "priorUsbFix": 7,
+    "flipInterrupts": 600,
+    "activeMouseDecoder": true,
+    "bothInputPorts": true,
+    "sidRaster": true,
+    "armIdleSeconds": 60,
+    "armIdleAlsoPassesPriorFailingBuild": true
+  },
+  "embeddedDesktopEqualsSuppliedDesktop": true,
+  "hexChecksummedRecords": 152252,
+  "smoothMouseConfirmedOnPriorCandidate": true,
+  "currentHardwareFreezeResolutionConfirmed": false,
+  "candidateChange": "Removed only the extra flip-wait input-service hook; core text differs by one byte encoding the C64 free-memory increase from 3861 to 3864. Core data and external apps match the prior candidate.",
+  "physicalAcceptance": false,
+  "installed": false,
+  "flashed": false
+}
