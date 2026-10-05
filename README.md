@@ -6,7 +6,7 @@ Game conversion and the remaining games live in [Power Engine for C64](https://m
 
 | Download | Contents |
 | --- | --- |
-| [Teensy setup](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/MPE-Host.zip) | Stock firmware, MPE.TRH, registration, HamsterOS and matching apps |
+| [Teensy setup](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/Teensy.Support.Package.zip) | Stock firmware, MPE.TRH, HamsterOS, apps and dictionary |
 | [NESVM](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/NESVM.zip) | Portable Teensy/KFF2 MPE player; supply your own games |
 | [DoomVM](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/DOOMVM.zip) | Portable player with licensed Doom 1.9 shareware |
 | [A8PicoCart support](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/A8PicoCart-Support.zip) | Shared firmware 1.2.10, HamsterOS 0.4.2, Doom launcher and SYS files |
@@ -18,8 +18,13 @@ Preserve games, ROMs, disks,
 settings and saves. Atari packages use their own formats. The A8 compiler is a
 separate unreleased product and is not included.
 
-The revised MPE host/VM combinations and latest A8 components passed software
-checks; physical acceptance of these exact updated combinations remains pending.
+The updated MPE host and NESVM passed software checks. The owner confirmed the
+reported NTSC NES launch failure was fixed on TeensyROM+ 0.8.0.14. Installed
+files were not independently read back; full-game and additional hardware
+acceptance remain unverified. The Teensy ZIP preserves its 0.8.0.13 firmware,
+desktop and apps. Host checks used a rebuilt desktop; the preserved desktop with
+the new host has not been requalified. Latest A8 components passed software
+checks; physical acceptance of their updated combination remains pending.
 KFF2 H24 retains its existing browser acceptance tied to the exact updater hash.
 [Component manifest](MANIFEST.json) identifies current files.
 

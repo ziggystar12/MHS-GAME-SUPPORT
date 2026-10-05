@@ -1,2 +1,3 @@
-Launch NESVM.MPE with the current MPE.TRH host, or select the KFF2 target when present.
-Preserve VMS/NESVM and its original games, ROMs, disks and saves. Replace the MPE file to update the runtime.
+Launch NESVM.MPE with the updated MPE.TRH host, or select the included KFF2 player.
+Install or update MPE.TRH from the compatible stock TeensyROM text menu, then fully power-cycle.
+Preserve VMS/NESVM, ROMS and SAVES. Replace the MPE file to update the runtime.

@@ -8,7 +8,7 @@ def sha(b): return hashlib.sha256(b).hexdigest()
 def current_files():
  m=json.loads((ROOT/'MANIFEST.json').read_text())
  assert m['publicVmIds']==['NESVM']
- assert set(m['releaseAssets'])=={'MPE-Host.zip','KFF2-Support.zip','A8PicoCart-Support.zip','NESVM.zip','DOOMVM.zip'}
+ assert set(m['releaseAssets'])=={'Teensy.Support.Package.zip','KFF2-Support.zip','A8PicoCart-Support.zip','NESVM.zip','DOOMVM.zip'}
  assert m['softwarePassed'] and not m['physicalAcceptance'] and not m['commercialGameDataBundled']
  for e in m['files']:
   p=Path(e['path']); assert not p.is_absolute() and '..' not in p.parts and '\\' not in e['path']

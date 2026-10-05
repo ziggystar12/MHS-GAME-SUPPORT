@@ -1,14 +1,15 @@
 # HamsterOS
 
-[Teensy desktop and matching apps](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/MPE-Host.zip).
-Install the [stock Teensy MPE host](MPE-HOST.md), copy Sys/APPS/MPE from the ZIP
+[Teensy desktop and matching apps](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/Teensy.Support.Package.zip).
+Install the [stock Teensy MPE host](MPE-HOST.md), copy Sys and APPS from the ZIP
 to SD and launch Sys/HAMSTEROS.MPE. Keep games, settings and saves. Paint,
 Image Viewer, SID Player, HamWrite, HamNet and ZipZork accompany the desktop,
 with the optional spelling dictionary. Supply your own ZipZork stories.
 
-The complete setup ZIP updates the desktop and apps together. Its desktop
-hash is unchanged from the earlier accepted stock
-companion. The revised host still needs exact physical acceptance.
+The setup ZIP preserves its desktop and apps. The updated host tests used a
+rebuilt desktop; this unchanged public desktop with the new host has not been
+requalified. The owner's NTSC NES launch report does not establish desktop or
+full-game acceptance.
 
 Atari HamsterOS is separate in A8PicoCart-Support.zip: put HAMSTEROS.MPE at the
 cart root and six matching companions in SYS. Version 0.4.2 pairs with shared

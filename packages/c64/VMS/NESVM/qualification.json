@@ -29,5 +29,18 @@
     "dataBytes": 2432,
     "bssBytes": 16544
   },
-  "romsPackaged": false
+  "romsPackaged": false,
+  "ntscStartup": {
+    "softwarePassed": true,
+    "packageSha256": "ac2da009c69f98b506625bfcdcad6345a111d6e98d351509931b84f800aa0d3a",
+    "clientSha256": "594c0f0e09ae68eab8fda96a02225fccbecef72cabf04e2b4ea0a13ed5d86540",
+    "hostSha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
+    "receiverSourceRebuild": true,
+    "receiverSourceSha256": "6ce6cfc39b45726930d7227d1eb408c857c05a8366144ae89a73f14ef676c344",
+    "engineUnchanged": true,
+    "kff2Unchanged": true,
+    "ownerReportedLaunchFix": true,
+    "installedFilesReadBack": false,
+    "fullGame": false
+  }
 }

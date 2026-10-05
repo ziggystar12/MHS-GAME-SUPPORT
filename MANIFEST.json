@@ -4,13 +4,13 @@
     "NESVM"
   ],
   "releaseAssets": [
-    "MPE-Host.zip",
+    "Teensy.Support.Package.zip",
     "KFF2-Support.zip",
     "A8PicoCart-Support.zip",
     "NESVM.zip",
     "DOOMVM.zip"
   ],
-  "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
+  "hostSha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
   "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
   "a8FirmwareSha256": "cc5e08bb4feb3c5ab8a32e08aab96819186f354514f91b5a627efbebdd7d5ded",
   "softwarePassed": true,
@@ -26,7 +26,7 @@
     {
       "path": "firmware/mpe-host/MPE.TRH",
       "bytes": 322624,
-      "sha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3"
+      "sha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559"
     },
     {
       "path": "firmware/mpe-host/MPE-DEMO.MPE",
@@ -100,18 +100,18 @@
     },
     {
       "path": "firmware/mpe-host/README.md",
-      "bytes": 461,
-      "sha256": "3482cc9ff26288c9c86215cf0925fff83ff4c27980a3c1f2da38431cbd75578d"
+      "bytes": 805,
+      "sha256": "b5e8012128b61b909b7c33beb608d53ba17a716f92d65211162ac472e7a51e10"
     },
     {
       "path": "firmware/mpe-host/VERIFICATION.json",
-      "bytes": 12102,
-      "sha256": "bf1bc5f770b0442098d54f19e165dd4e78534ea553bfc197436f599e4afd3bde"
+      "bytes": 25427,
+      "sha256": "77f61736890bff8d7b5b073812c1d43f4f7d6658aae2c346f24d1b0b7d4f5d32"
     },
     {
       "path": "firmware/mpe-host/MANIFEST.json",
       "bytes": 2838,
-      "sha256": "15eab1b22594c39904dfbf2d856eefeadcfb942a841743e67c59be0b33c25d4a"
+      "sha256": "43922955a704ac776b3cff918d8234728b60e4a272502d1af22082ea915d8807"
     },
     {
       "path": "firmware/teensyrom-plus/TeensyROM+_0.8.0.13_full.hex",
@@ -326,17 +326,17 @@
     {
       "path": "packages/hamsteros-c64/MANIFEST.json",
       "bytes": 5911,
-      "sha256": "fbb86ca6015e69530a2629692ee680408008ed597f1e70c0213d3d7ca8134e18"
+      "sha256": "23eda6414b1fbff89a1a28c1ab17d4e2b7c56ac4ee503c4f0aaf59f3206dcb18"
     },
     {
       "path": "packages/c64/NESVM.MPE",
       "bytes": 249386,
-      "sha256": "0512b1e24efc7113a84cd26fe19749f91fa6d17f394486e4b2c027b2fc8e8f7a"
+      "sha256": "ac2da009c69f98b506625bfcdcad6345a111d6e98d351509931b84f800aa0d3a"
     },
     {
       "path": "packages/c64/VMS/NESVM/COMPONENTS.json",
-      "bytes": 1743,
-      "sha256": "a105297985bbec4e1c520998fe5b0c8c7739220683bfd2dc784649a471b4e7a8"
+      "bytes": 1793,
+      "sha256": "d06d4cc522202cdb446abd21a6b8f1c7ca861945e703aa7346ff9baef4b10aa6"
     },
     {
       "path": "packages/c64/VMS/NESVM/LICENSE-DISPLAY-COMPONENTS.txt",
@@ -365,13 +365,13 @@
     },
     {
       "path": "packages/c64/VMS/NESVM/qualification.json",
-      "bytes": 828,
-      "sha256": "adf4e8677c30867c2e330357a790828864424af3a8cb9cb9a7b2e2591f8c6f2e"
+      "bytes": 1425,
+      "sha256": "95f2b50246bd4bc2ded4395bca7693d6770d8959f540df41906ee2932a23b4f9"
     },
     {
       "path": "packages/c64/VMS/NESVM/README.md",
-      "bytes": 565,
-      "sha256": "783f17e52f87aaf8192d3b5ae009cea6af0d75d80752ae8dd6c034530c27e545"
+      "bytes": 694,
+      "sha256": "d1e791ca1a093dbce2f2678b05d6fd28b96b8708619588e72022f19778e1fe37"
     },
     {
       "path": "packages/c64/VMS/NESVM/version.json",
@@ -390,8 +390,8 @@
     },
     {
       "path": "packages/c64/VMS/NESVM/MPE-README.txt",
-      "bytes": 198,
-      "sha256": "e4315b68cfdd3f6cc680028ab77f348ff88eca319b9b7f6e2ed9359b6efef049"
+      "bytes": 261,
+      "sha256": "0d8ef37725a50109f768b59dc566e95c320a987c256f3992ab843b5f96b47367"
     },
     {
       "path": "packages/doomvm/DOOMVM.MPE",

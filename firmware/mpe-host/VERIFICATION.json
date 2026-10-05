@@ -1,16 +1,45 @@
 {
-  "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
+  "hostSha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
   "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
-  "testedFirmwareCommit": "018641a1fce70eba94c49c940ae677758cde0288",
+  "testedFirmwareCommit": "5c1196f51ed0552f1fce8bf6adaea42015f67fe2",
   "software": {
     "passed": true,
+    "build": {
+      "upstream": "5c1196f51ed0552f1fce8bf6adaea42015f67fe2",
+      "symbols": {
+        "_etext": 32384,
+        "__exidx_end": 32388,
+        "_flashimagelen": 322560,
+        "_ebss": 536936384,
+        "_heap_start": 536936416,
+        "_heap_end": 536952800,
+        "_estack": 537198592
+      },
+      "descriptor": {
+        "magic": 843601485,
+        "abi": 2,
+        "services": 32,
+        "hostBytes": 76,
+        "name": "MHS MPE",
+        "codeFloor": 32388
+      },
+      "sha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
+      "imageBytes": 322560,
+      "installedCoreUnchanged": true,
+      "physicalAcceptance": false,
+      "firmwareFlashed": false
+    },
     "host": {
       "passed": true,
-      "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
-      "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
+      "hostSha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
+      "desktopSha256": "634739047baccb601eeec4f00575fc5c7bb1ee824e347868f872a81c9617604f",
       "desktopServices": 3151903,
       "desktopControl": true,
       "engineAdmission": [
+        {
+          "path": "devices/teensy-stock-mpe/VMS/MPE/engine.mvm",
+          "sha256": "c236da04404ecf6d76a53b8ba7fe9a63f4596d08ea4e55a473d4752829ed5981"
+        },
         {
           "path": "games/runtime/another-world/engine.mvm",
           "sha256": "efe380267feb1957aa33888d27ae9dc50667dc78d38423ca2caa7ab8014eb0c7"
@@ -20,8 +49,20 @@
           "sha256": "e1e5fda70393cd90e4c4cdd4f16a728a51af7da675c87de9eb572e883b3c324b"
         },
         {
+          "path": "games/runtime/colonel/engine.mvm",
+          "sha256": "25e41908c022ae0825c6dbdc1c19c2547398cd98e13e3dee57e45951ad19ed22"
+        },
+        {
           "path": "games/runtime/doom/engine.mvm",
           "sha256": "1893f2ceb541200a9e278c3bf5d7e2a55b47925e7e7da4b039b8f7131338d16b"
+        },
+        {
+          "path": "games/runtime/double-dragon/engine.mvm",
+          "sha256": "2eb24fb0c782a3a4dcff1c1283f22090140b5640a1674367a66c14368bbb4f08"
+        },
+        {
+          "path": "games/runtime/gauntlet/engine.mvm",
+          "sha256": "324a8908b0df5f797d5d96d38c05e6f13f7af2a70ba667da6014dec58d03b30d"
         },
         {
           "path": "games/runtime/kyrandia/engine.mvm",
@@ -56,6 +97,10 @@
           "sha256": "e604064e02221462fa34c86370756165ff16f031ba7f710ceec5d1b1668d4292"
         },
         {
+          "path": "Support/firmware/mpe-host/VMS/MPE/engine.mvm",
+          "sha256": "c236da04404ecf6d76a53b8ba7fe9a63f4596d08ea4e55a473d4752829ed5981"
+        },
+        {
           "path": "vms/AGIVM/VMS/AGIVM/engine.mvm",
           "sha256": "8cca8714747532de02e50564dfa93773eeb10c7d0108ebbe5caf6375617839d7"
         },
@@ -73,12 +118,14 @@
         }
       ],
       "demoSha256": "04d5ae76d39fca0952438d1085ee8d6b93f46425eaad051fc2b7d9147685dff9",
-      "physicalAcceptance": false
+      "physicalAcceptance": false,
+      "retainedReceiptSha256": "0ca657828994db96b17170db5df8c567e722435d3678bcf0711fb01a6a14a042"
     },
     "services": {
       "passed": true,
-      "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
-      "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
+      "hostSha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
+      "desktopSha256": "634739047baccb601eeec4f00575fc5c7bb1ee824e347868f872a81c9617604f",
+      "schedulerFixtureSha256": "d2175c7df94e1c16cb9da0b1d843c2ccfc8289b909fba7b952a2f1cecc57220c",
       "results": [
         {
           "name": "test-usb-files.mjs",
@@ -86,7 +133,7 @@
         },
         {
           "name": "prepare-desktop-usb.test.mjs",
-          "output": "✔ USB transfers finish, detach, or halt DMA before a bounded failure returns (325.1979ms)\n✔ desktop lifecycle detects replacement media, abandons stale handles, and powers down (390.8957ms)\n✔ USB disconnect IRQ schedule waits halt DMA instead of blocking forever (292.0477ms)\n✔ pinned EHCI starts idle and only polls live periodic endpoints, with bounded disconnect (450.7162ms)\n✔ SDK patches reject unrecognized upstream source (1.8376ms)\n✔ pinned USB timer bookkeeping leaves the C64 bus interrupt live and preserves nested masks (313.8236ms)\n✔ storage-only compile retains excluded upstream sources and licensing (13.4181ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1872.9607"
+          "output": "\u00e2\u0153\u201d USB transfers finish, detach, or halt DMA before a bounded failure returns (212.1253ms)\n\u00e2\u0153\u201d desktop lifecycle detects replacement media, abandons stale handles, and powers down (263.1548ms)\n\u00e2\u0153\u201d USB disconnect IRQ schedule waits halt DMA instead of blocking forever (191.2572ms)\n\u00e2\u0153\u201d pinned EHCI starts idle and only polls live periodic endpoints, with bounded disconnect (258.4231ms)\n\u00e2\u0153\u201d SDK patches reject unrecognized upstream source (1.0312ms)\n\u00e2\u0153\u201d pinned USB timer bookkeeping leaves the C64 bus interrupt live and preserves nested masks (199.8393ms)\n\u00e2\u0153\u201d storage-only compile retains excluded upstream sources and licensing (7.6756ms)\n\u00e2\u201e\u00b9 tests 7\n\u00e2\u201e\u00b9 suites 0\n\u00e2\u201e\u00b9 pass 7\n\u00e2\u201e\u00b9 fail 0\n\u00e2\u201e\u00b9 cancelled 0\n\u00e2\u201e\u00b9 skipped 0\n\u00e2\u201e\u00b9 todo 0\n\u00e2\u201e\u00b9 duration_ms 1196.0334"
         },
         {
           "name": "test-teensy-adapter.mjs",
@@ -169,23 +216,311 @@
           "output": "Production ARM loader and packaged desktop/native APP lifecycle passed"
         }
       ],
-      "physicalAcceptance": false
+      "physicalAcceptance": false,
+      "retainedReceiptSha256": "2c8e2f5c1ab180e5dceb46bf35aba26a636ba7550c64bb9f3b465abee3bb8a4f"
+    },
+    "source": {
+      "qualification": {
+        "schemaVersion": 1,
+        "passed": true,
+        "upstream": "5c1196f51ed0552f1fce8bf6adaea42015f67fe2",
+        "host": {
+          "path": "MPE.TRH",
+          "bytes": 322624,
+          "sha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559"
+        },
+        "sourceArchive": {
+          "path": "source.zip",
+          "bytes": 4750588,
+          "sha256": "6b51821711f08b59453d246e3170d1b3e7ba78950a7d6b698d92046181909dab"
+        },
+        "sourceInventory": {
+          "path": "source-inventory.json",
+          "bytes": 472879,
+          "sha256": "1de79d92b4c06eaaf12cbdf54948eaf22f0a26cd995332b6cee195292c23862b"
+        },
+        "sourceRebuild": {
+          "passed": true,
+          "hostSha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
+          "host": {
+            "path": "rebuilt/MPE.TRH",
+            "bytes": 322624,
+            "sha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559"
+          }
+        },
+        "checks": [
+          {
+            "path": "tests/verification.json",
+            "bytes": 3311,
+            "sha256": "0ca657828994db96b17170db5df8c567e722435d3678bcf0711fb01a6a14a042"
+          },
+          {
+            "path": "service-tests/verification.json",
+            "bytes": 8164,
+            "sha256": "2c8e2f5c1ab180e5dceb46bf35aba26a636ba7550c64bb9f3b465abee3bb8a4f"
+          }
+        ],
+        "physicalAcceptance": false,
+        "physicalCardWritten": false,
+        "firmwareFlashed": false
+      },
+      "inventorySha256": "1de79d92b4c06eaaf12cbdf54948eaf22f0a26cd995332b6cee195292c23862b",
+      "inventoryFileCount": 1333,
+      "retainedPrivately": true,
+      "availableUnderWrittenOffer": true
     },
     "standaloneVms": {
       "passed": true,
       "packages": [
         {
           "id": "NESVM",
-          "sha256": "0512b1e24efc7113a84cd26fe19749f91fa6d17f394486e4b2c027b2fc8e8f7a",
+          "sha256": "ac2da009c69f98b506625bfcdcad6345a111d6e98d351509931b84f800aa0d3a",
           "engineSha256": "5abf2ee4c065e382cd8783b4e1155b6fb68bfe6584cb6411f17afc2f6d4fe3b6",
-          "clientSha256": "067b039d6d45343c09c4850391587d2b51f29e3ea2195d923c2f7c9d76982835",
+          "clientSha256": "594c0f0e09ae68eab8fda96a02225fccbecef72cabf04e2b4ea0a13ed5d86540",
           "targets": [
             "teensy",
             "kff2"
-          ]
+          ],
+          "qualification": {
+            "passed": true,
+            "reports": [
+              "nes_apu_batch_test",
+              "nes_mmc3_batch_test",
+              "nofrendo_test",
+              "nes_dmc_test",
+              "nes_apu_effects_test",
+              "module_test",
+              "nes_timing_test",
+              "nes_audio_pending_test",
+              "nes_input_hold_test",
+              "nes_prism_padding_test",
+              "test-nes-mapper1",
+              "test-nes-extra-mappers",
+              "nes_mapper90_test",
+              "nes_mapper90_cache_test",
+              "nes_mapper90_rom_test"
+            ],
+            "physicalHardware": false,
+            "fullGame": false,
+            "ownerRom": {
+              "name": "Super Mario World (Unl) Patched.nes",
+              "sha256": "89baa458da038462b66d43648f8c850c122d01c1060bffa827fa99c2f541b5c4"
+            },
+            "module": {
+              "sha256": "5abf2ee4c065e382cd8783b4e1155b6fb68bfe6584cb6411f17afc2f6d4fe3b6",
+              "codeBytes": 97676,
+              "dataBytes": 2432,
+              "bssBytes": 16544
+            },
+            "romsPackaged": false,
+            "ntscStartup": {
+              "softwarePassed": true,
+              "packageSha256": "ac2da009c69f98b506625bfcdcad6345a111d6e98d351509931b84f800aa0d3a",
+              "clientSha256": "594c0f0e09ae68eab8fda96a02225fccbecef72cabf04e2b4ea0a13ed5d86540",
+              "hostSha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
+              "receiverSourceRebuild": true,
+              "receiverSourceSha256": "6ce6cfc39b45726930d7227d1eb408c857c05a8366144ae89a73f14ef676c344",
+              "engineUnchanged": true,
+              "kff2Unchanged": true,
+              "ownerReportedLaunchFix": true,
+              "installedFilesReadBack": false,
+              "fullGame": false
+            }
+          },
+          "receiverExecutableSha256": "cefc65490cfd684a54d763d36957cf6b383d0f51a78aef39e11bb1e3ac43988b",
+          "receiverExecutableHashScope": "CRT prefix with title and MGC1 metadata bank zeroed; compared to the source-rebuilt client CRT"
         }
       ]
     }
+  },
+  "desktopBinding": {
+    "shippedDesktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
+    "testedDesktopSha256": "634739047baccb601eeec4f00575fc5c7bb1ee824e347868f872a81c9617604f",
+    "shippedDesktopPreserved": true,
+    "combinedDesktopQualified": false,
+    "note": "Host and service checks used the rebuilt desktop. The previously shipped desktop and apps remain byte-identical in this ZIP; their combination with this host has not been requalified."
+  },
+  "ownerAcceptance": {
+    "reportedNtscNesLaunchFix": true,
+    "firmware": "TeensyROM+ 0.8.0.14 main",
+    "installedFilesReadBack": false,
+    "fullGame": false,
+    "additionalHardwareAcceptance": false,
+    "scope": "Owner confirmed the reported NTSC NES launch failure was fixed; installed files were not independently read back."
+  },
+  "publicationRefresh": {
+    "passed": true,
+    "releaseId": 401558055,
+    "tag": "support-2026.10.01-current",
+    "assets": [
+      {
+        "name": "Teensy.Support.Package.zip",
+        "bytes": 2451208,
+        "sha256": "2b3503a01a4f2e62e07fe0e3b30870afa5b3c274ecc2946fd0a4cfaa04629504",
+        "previousSha256": "77b2856c230271598dccf303367624b27ca7d10bf2e08509221f9f4746bff7fe",
+        "previousAssetId": 608197747,
+        "files": [
+          {
+            "path": "APPS/HAMNET.APP",
+            "bytes": 40236,
+            "sha256": "632d6b83af2ff2dd8e7659bf073cac6ab7e21c453755dd27b2b9a8d6dea9b1f5"
+          },
+          {
+            "path": "APPS/HAMWRITE.APP",
+            "bytes": 8968,
+            "sha256": "401fd9f569c8e30eab74b223e0bd964ef2faa1276ebf797dc51f05646fadf76b"
+          },
+          {
+            "path": "APPS/IMAGE.APP",
+            "bytes": 10568,
+            "sha256": "bc9f8ea6b079b31b45c06bb2b64544bb4aa905eba2485ee5a2a2592936a175a1"
+          },
+          {
+            "path": "APPS/PAINT.APP",
+            "bytes": 1804,
+            "sha256": "8d6b13b7cc0181bbd0c7f19adf2c037ee1f6d1c1862ce7c7e91fb81dbedbe08d"
+          },
+          {
+            "path": "APPS/SID.APP",
+            "bytes": 22476,
+            "sha256": "a7b3e3d848c07f2161624a658e513e0fbf967935ccb88a6624c8698616f97149"
+          },
+          {
+            "path": "APPS/ZIPZORK.APP",
+            "bytes": 43908,
+            "sha256": "bad21b9b14dd0e98d78462b0318f020cb4352bcd371a22a39dbee4dc37ace0cc"
+          },
+          {
+            "path": "Firmware/TeensyROM+_0.8.0.13_full.hex",
+            "bytes": 5252332,
+            "sha256": "cdea4ae1f7c115cb61fa56f50d8f518011492b7b0e4f08ae638aaefa3ba872ef"
+          },
+          {
+            "path": "MPE.TRH",
+            "bytes": 322624,
+            "sha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559"
+          },
+          {
+            "path": "README.txt",
+            "bytes": 30750,
+            "sha256": "7fc544eb5888b5ad7b2f4de5418984dd306fb844f7bf139f458e2f2e30a95b88"
+          },
+          {
+            "path": "Sys/HAMSTEROS.MPE",
+            "bytes": 234537,
+            "sha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426"
+          },
+          {
+            "path": "Sys/SPELL.DAT",
+            "bytes": 217136,
+            "sha256": "e72efc0bc32978712849f0b92f1b78aa3837c060e28661341f1a2c8e4821a984"
+          }
+        ],
+        "changedMembers": [
+          "MPE.TRH",
+          "README.txt"
+        ],
+        "layoutPreserved": true,
+        "unrelatedMembersPreserved": true
+      },
+      {
+        "name": "NESVM.zip",
+        "bytes": 164800,
+        "sha256": "39ddd8df6021a0587c0d2ae79cc2cf782c1a88c9010af5fd4cd60864f3413e49",
+        "previousSha256": "ced023ecc9a4c5565d33ec688325703d1147df4803d5e7943aac3437841695ea",
+        "previousAssetId": 604863737,
+        "files": [
+          {
+            "path": "NESVM.MPE",
+            "bytes": 249386,
+            "sha256": "ac2da009c69f98b506625bfcdcad6345a111d6e98d351509931b84f800aa0d3a"
+          },
+          {
+            "path": "Source-offer.txt",
+            "bytes": 740,
+            "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
+          },
+          {
+            "path": "VMS/NESVM/COMPONENTS.json",
+            "bytes": 1793,
+            "sha256": "d06d4cc522202cdb446abd21a6b8f1c7ca861945e703aa7346ff9baef4b10aa6"
+          },
+          {
+            "path": "VMS/NESVM/LICENSE-DISPLAY-COMPONENTS.txt",
+            "bytes": 1070,
+            "sha256": "1a969dd98763da79faa7d888975880da8529f8eea768fe7cc8f43befe0c2750f"
+          },
+          {
+            "path": "VMS/NESVM/LICENSE-MHS.txt",
+            "bytes": 1614,
+            "sha256": "ee8b08eaa84b387fc610c16665c465932048ce0dc85dc89590b53e10bf8edbab"
+          },
+          {
+            "path": "VMS/NESVM/LICENSE-Nofrendo.txt",
+            "bytes": 25270,
+            "sha256": "cc535c21133c895b56b374c8a1dc1eb948d99003ed2b47372069456b62f42b24"
+          },
+          {
+            "path": "VMS/NESVM/LICENSE-PRISM-PLUS.txt",
+            "bytes": 3146,
+            "sha256": "9da0b65c2f381581c0eed5f49702a61b3d35be74f718bb4f7a2790f0c5003093"
+          },
+          {
+            "path": "VMS/NESVM/MPE-README.txt",
+            "bytes": 261,
+            "sha256": "0d8ef37725a50109f768b59dc566e95c320a987c256f3992ab843b5f96b47367"
+          },
+          {
+            "path": "VMS/NESVM/NOTICES.md",
+            "bytes": 2885,
+            "sha256": "d44e1072bccb116bd60c77c16ea508d4743f107eceac330a685342a0f0cb6bab"
+          },
+          {
+            "path": "VMS/NESVM/qualification.json",
+            "bytes": 1425,
+            "sha256": "95f2b50246bd4bc2ded4395bca7693d6770d8959f540df41906ee2932a23b4f9"
+          },
+          {
+            "path": "VMS/NESVM/README.md",
+            "bytes": 694,
+            "sha256": "d1e791ca1a093dbce2f2678b05d6fd28b96b8708619588e72022f19778e1fe37"
+          },
+          {
+            "path": "VMS/NESVM/ROMS/README.txt",
+            "bytes": 95,
+            "sha256": "ccd8da80365def1ccc551990f6e142a3ff8c8ad75bfec485f94272b5698d14a8"
+          },
+          {
+            "path": "VMS/NESVM/SAVES/README.txt",
+            "bytes": 96,
+            "sha256": "11817c4e76d6ded7d1de09936375fe2a76c27fd375b095bb3c9f5ff0dcd14b2d"
+          },
+          {
+            "path": "VMS/NESVM/version.json",
+            "bytes": 206,
+            "sha256": "040baa9941bc6ba5ca0794437fcad144fcd12d49a3f28adee168a71a4dc4c90f"
+          }
+        ],
+        "changedMembers": [
+          "NESVM.MPE",
+          "VMS/NESVM/COMPONENTS.json",
+          "VMS/NESVM/MPE-README.txt",
+          "VMS/NESVM/qualification.json",
+          "VMS/NESVM/README.md"
+        ],
+        "layoutPreserved": true,
+        "unrelatedMembersPreserved": true
+      }
+    ],
+    "hostSha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
+    "nesSha256": "ac2da009c69f98b506625bfcdcad6345a111d6e98d351509931b84f800aa0d3a",
+    "hostSourceSha256": "6b51821711f08b59453d246e3170d1b3e7ba78950a7d6b698d92046181909dab",
+    "receiverSourceSha256": "6ce6cfc39b45726930d7227d1eb408c857c05a8366144ae89a73f14ef676c344",
+    "privateSourceRetained": true,
+    "romsPackaged": false,
+    "otherAssetsPreserved": true,
+    "physicalAcceptance": false,
+    "scope": "Two replacement ZIPs; existing member layouts and other members preserved"
   },
   "physicalAcceptance": false
 }

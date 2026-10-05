@@ -1,7 +1,7 @@
 # NESVM MPE package
 
-Launch NESVM.MPE directly. On TeensyROM install the matching MPE.TRH host from the stock text menu, then fully power-cycle. The same MPE includes the KFF2 player. 
+Launch NESVM.MPE directly. On TeensyROM install the matching updated MPE.TRH from the stock text menu, then fully power-cycle. The same MPE retains its checked KFF2 player.
 
-Keep your existing VMS/NESVM library and saves when replacing the MPE. NES files belong in ROMS. This package contains no commercial ROMs or disk images. Component notices and corresponding source availability accompany the download.
+Keep VMS/NESVM and its ROMS and SAVES folders when replacing the MPE. No commercial ROMs or disk images are included. Component notices and the written source offer accompany this download.
 
-This update passed software package, file-service and save checks. Physical acceptance of the updated host/package combination remains pending.
+The NTSC startup update passed emitted receiver, CRC recovery, package, file-service and save checks. The owner confirmed that the reported NTSC launch failure was fixed with TR+ 0.8.0.14. Installed card files were not independently read back; full-game and additional physical acceptance remain unverified.

@@ -8,9 +8,14 @@ python tools/check_mpe_host.py --release-dir /path/to/current/downloads
 ```
 
 Checks cover current component hashes, package/engine headers and CRCs,
-registration, source archives, firmware records, release ZIP readbacks and local
-links. Damaged hosts are rejected. Software receipts bind exact files;
-physical acceptance remains separate.
+registration, retained source/rebuild records, firmware records and local links.
+The optional release directory must contain Teensy.Support.Package.zip and
+NESVM.zip. Checks bind both ZIP hashes, exact 11/14-member layouts and every
+member to the replacement record and repository companions; no checksum or
+source download is required. Add `--previous-release-dir /path/to/previous/downloads`
+to prove that the member layouts and all other member bytes were preserved.
+Damaged hosts are rejected. Software receipts bind exact files; physical
+acceptance remains separate.
 
 Retained interface/cache checks:
 

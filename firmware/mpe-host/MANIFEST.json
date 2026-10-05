@@ -1,12 +1,12 @@
 {
-  "hostSha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3",
-  "testedFirmwareCommit": "018641a1fce70eba94c49c940ae677758cde0288",
+  "hostSha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
+  "testedFirmwareCommit": "5c1196f51ed0552f1fce8bf6adaea42015f67fe2",
   "physicalAcceptance": false,
   "files": [
     {
       "path": "MPE.TRH",
       "bytes": 322624,
-      "sha256": "8353b6e3688e64a9055dfa04067ac4f15f91c5039d97fe045bfacc8b1ba398b3"
+      "sha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559"
     },
     {
       "path": "MPE-DEMO.MPE",
@@ -80,13 +80,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 461,
-      "sha256": "3482cc9ff26288c9c86215cf0925fff83ff4c27980a3c1f2da38431cbd75578d"
+      "bytes": 805,
+      "sha256": "b5e8012128b61b909b7c33beb608d53ba17a716f92d65211162ac472e7a51e10"
     },
     {
       "path": "VERIFICATION.json",
-      "bytes": 12102,
-      "sha256": "bf1bc5f770b0442098d54f19e165dd4e78534ea553bfc197436f599e4afd3bde"
+      "bytes": 25427,
+      "sha256": "77f61736890bff8d7b5b073812c1d43f4f7d6658aae2c346f24d1b0b7d4f5d32"
     }
   ]
 }

@@ -66,6 +66,25 @@ def check_bundle():
     assert verification['desktopSha256'] == DESKTOP_SHA
     assert manifest['testedFirmwareCommit'] == verification['testedFirmwareCommit']
     assert verification['software']['standaloneVms']['passed']
+    tested_desktop = verification['software']['host']['desktopSha256']
+    assert verification['software']['services']['desktopSha256'] == tested_desktop
+    binding = verification['desktopBinding']
+    assert binding['shippedDesktopSha256'] == DESKTOP_SHA
+    assert binding['testedDesktopSha256'] == tested_desktop
+    assert binding['shippedDesktopPreserved'] and not binding['combinedDesktopQualified']
+    assert tested_desktop != DESKTOP_SHA, 'Preserved and tested desktop receipts must stay distinct'
+    source = verification['software']['source']
+    qualification = source['qualification']
+    assert qualification['passed'] and qualification['sourceRebuild']['passed']
+    assert qualification['host']['sha256'] == qualification['sourceRebuild']['hostSha256'] == HOST_SHA
+    assert qualification['sourceRebuild']['host']['sha256'] == HOST_SHA
+    assert source['inventorySha256'] == qualification['sourceInventory']['sha256']
+    assert source['inventoryFileCount'] > 0 and source['retainedPrivately'] and source['availableUnderWrittenOffer']
+    for receipt, path in ((verification['software']['host'], 'tests/verification.json'),
+                          (verification['software']['services'], 'service-tests/verification.json')):
+        retained = next(e for e in qualification['checks'] if e['path'] == path)
+        assert receipt['passed'] and receipt['hostSha256'] == HOST_SHA
+        assert receipt['retainedReceiptSha256'] == retained['sha256']
     for offset in (0, 12, 44, 64, 64 + 0x800, len(data) - 1):
         bad = bytearray(data); bad[offset] ^= 1
         try: trh(bytes(bad))
@@ -94,29 +113,88 @@ def check_bundle():
     return files
 
 
-def check_release(folder, bundle):
-    checksums = (folder / 'SHA256SUMS.txt').read_text().splitlines()
-    expected = {'MPE.TRH', 'MPE-Host.zip', 'HAMSTEROS.MPE', 'HamsterOS-C64.zip'}
-    assert expected <= {line.split('  ')[1] for line in checksums}
-    for line in checksums:
-        digest, name = line.split('  '); assert sha((folder / name).read_bytes()) == digest, name
-    assert (folder / 'MPE.TRH').read_bytes() == bundle['MPE.TRH']
-    assert zip_files(folder / 'MPE-Host.zip') == bundle
-    companion = zip_files(folder / 'HamsterOS-C64.zip')
-    manifest = manifest_files(companion.__getitem__, companion)
-    assert sha(companion['Sys/HAMSTEROS.MPE']) == DESKTOP_SHA == manifest['desktopSha256']
-    assert (folder / 'HAMSTEROS.MPE').read_bytes() == companion['Sys/HAMSTEROS.MPE']
-    assert manifest['hostSha256'] == HOST_SHA and not manifest['physicalAcceptance']
-    assert {n for n in companion if n.startswith('APPS/')} == {f'APPS/{n}.APP' for n in ('HAMNET', 'HAMWRITE', 'IMAGE', 'PAINT', 'SID', 'ZIPZORK')}
-    assert all(n.startswith(('APPS/', 'MPE/Notices/', 'Sys/')) or n in {'README.txt', 'MANIFEST.json'} for n in companion)
-    for n in ('MPE/Notices/Source-offer.txt', 'Sys/Notices/ZipZork-source-offer.txt'):
-        assert b'2 October 2029' in companion[n] and b'three years after the last distribution' in companion[n]
-    print('MPE release: download hashes, both ZIP readbacks and exact desktop companion passed')
+TEENSY_MEMBERS = {f'APPS/{n}.APP' for n in ('HAMNET', 'HAMWRITE', 'IMAGE', 'PAINT', 'SID', 'ZIPZORK')} | {
+    'Firmware/TeensyROM+_0.8.0.13_full.hex', 'MPE.TRH', 'README.txt', 'Sys/HAMSTEROS.MPE', 'Sys/SPELL.DAT'}
+NES_MEMBERS = {'NESVM.MPE', 'Source-offer.txt'} | {f'VMS/NESVM/{n}' for n in (
+    'COMPONENTS.json', 'LICENSE-DISPLAY-COMPONENTS.txt', 'LICENSE-MHS.txt', 'LICENSE-Nofrendo.txt',
+    'LICENSE-PRISM-PLUS.txt', 'MPE-README.txt', 'NOTICES.md', 'qualification.json', 'README.md',
+    'ROMS/README.txt', 'SAVES/README.txt', 'version.json')}
+CHANGED_MEMBERS = {
+    'Teensy.Support.Package.zip': {'MPE.TRH', 'README.txt'},
+    'NESVM.zip': {'NESVM.MPE', 'VMS/NESVM/COMPONENTS.json', 'VMS/NESVM/MPE-README.txt',
+                  'VMS/NESVM/qualification.json', 'VMS/NESVM/README.md'}}
+
+
+def check_release(folder, bundle, previous_folder=None):
+    verification = json.loads(bundle['VERIFICATION.json'])
+    refresh = verification['publicationRefresh']
+    assert refresh['passed'] and refresh['privateSourceRetained'] and refresh['otherAssetsPreserved']
+    assert not refresh['romsPackaged'] and not refresh['physicalAcceptance']
+    assert refresh['hostSha256'] == HOST_SHA
+    assert refresh['hostSourceSha256'] == verification['software']['source']['qualification']['sourceArchive']['sha256']
+    records = {e['name']: e for e in refresh['assets']}
+    assert len(refresh['assets']) == len(records) == 2
+    assert set(records) == set(CHANGED_MEMBERS)
+    contents = {}
+    for name, expected_members in (('Teensy.Support.Package.zip', TEENSY_MEMBERS), ('NESVM.zip', NES_MEMBERS)):
+        record = records[name]; data = (folder / name).read_bytes()
+        assert len(data) == record['bytes'] and sha(data) == record['sha256'], name
+        files = zip_files(folder / name); contents[name] = files
+        assert set(files) == expected_members, f'{name}: exact member layout'
+        entries = record['files']
+        assert len(entries) == len({e['path'] for e in entries}) == len(expected_members)
+        assert {e['path'] for e in entries} == expected_members
+        assert record['layoutPreserved'] and record['unrelatedMembersPreserved']
+        assert set(record['changedMembers']) == CHANGED_MEMBERS[name]
+        for e in entries:
+            member = files[e['path']]
+            assert len(member) == e['bytes'] and sha(member) == e['sha256'], e['path']
+        if previous_folder:
+            old_data = (previous_folder / name).read_bytes()
+            assert sha(old_data) == record['previousSha256'], f'{name}: previous ZIP hash'
+            old = zip_files(previous_folder / name)
+            assert set(old) == set(files), f'{name}: changed layout'
+            assert {n for n in files if files[n] != old[n]} == CHANGED_MEMBERS[name], f'{name}: unexpected changed member'
+
+    teensy = contents['Teensy.Support.Package.zip']
+    assert teensy['MPE.TRH'] == bundle['MPE.TRH']; trh(teensy['MPE.TRH'])
+    assert teensy['Firmware/TeensyROM+_0.8.0.13_full.hex'] == (ROOT / 'firmware/teensyrom-plus/TeensyROM+_0.8.0.13_full.hex').read_bytes()
+    for name in TEENSY_MEMBERS - {'MPE.TRH', 'README.txt', 'Firmware/TeensyROM+_0.8.0.13_full.hex'}:
+        assert teensy[name] == (ROOT / 'packages/hamsteros-c64' / name).read_bytes(), name
+    assert sha(teensy['Sys/HAMSTEROS.MPE']) == DESKTOP_SHA
+    assert bundle['Notices/Source-offer.txt'] in teensy['README.txt']
+    for name in ('CRC32-MIT.txt', 'FNET-Apache-2.0.txt', 'FNET-NOTICE.txt', 'MHS-Prism-Plus-LICENSE.txt',
+                 'NUFLIX-NOTICES.md', 'PJRC.txt', 'Prism-MIT.txt', 'SdFat-MIT.txt', 'TeensyROM-MIT.txt'):
+        assert bundle[f'Notices/{name}'] in teensy['README.txt'], name
+
+    nes = contents['NESVM.zip']
+    for name in NES_MEMBERS:
+        assert nes[name] == (ROOT / 'packages/c64' / name).read_bytes(), name
+    assert sha(nes['NESVM.MPE']) == refresh['nesSha256']
+    from check_current import mpe
+    entries = mpe(nes['NESVM.MPE'])
+    package = verification['software']['standaloneVms']['packages'][0]
+    assert package['id'] == 'NESVM' and package['sha256'] == refresh['nesSha256']
+    assert sha(entries['engine.mvm']) == package['engineSha256']
+    # The receiver occupies the CRT prefix, not a named package entry. MGC1
+    # replaces its title and metadata bank; the executable banks stay intact.
+    receiver = bytearray(nes['NESVM.MPE'][:0x6070])
+    receiver[32:64] = bytes(32); receiver[0x4070:0x6070] = bytes(0x2000)
+    assert sha(receiver) == package['receiverExecutableSha256']
+    components = json.loads(nes['VMS/NESVM/COMPONENTS.json'])
+    prism = next(e for e in components['components'] if e['name'].startswith('New MHS Prism+'))
+    assert prism['artifactSha256'] == package['clientSha256']
+    assert b'2 October 2029' in nes['Source-offer.txt'] and b'three years after the last distribution' in nes['Source-offer.txt']
+    assert refresh['receiverSourceSha256'] == package['qualification']['ntscStartup']['receiverSourceSha256']
+    print('MPE release: both ZIP hashes, exact 11/14-member layouts, unchanged desktop/apps/firmware, notices and NES companions passed')
+    if previous_folder: print('MPE refresh: previous ZIP hashes, preserved member layouts and only the specified changed members passed')
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--release-dir', type=Path)
+    parser.add_argument('--previous-release-dir', type=Path, help='Optionally compare the two ZIPs before this refresh')
     args = parser.parse_args()
+    if args.previous_release_dir and not args.release_dir: parser.error('--previous-release-dir requires --release-dir')
     bundle = check_bundle()
-    if args.release_dir: check_release(args.release_dir, bundle)
+    if args.release_dir: check_release(args.release_dir, bundle, args.previous_release_dir)
