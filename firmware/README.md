@@ -5,12 +5,12 @@ Preserve existing games, settings and saves.
 
 ## TeensyROM
 
-Extract MPE-Host.zip. Flash Firmware/TeensyROM+_0.8.0.13_full.hex with Teensy
+Extract Teensy.Support.Package.zip. Flash Firmware/TeensyROM+_0.8.0.15_full.hex with Teensy
 Loader. Copy the setup files to SD, install MPE.TRH through the stock text
 menu, then fully power-cycle.
 Keep all three VMS/MPE registration files. Installing VMBoot.TRH afterward
 replaces the single MPE host slot. Launch a VM .MPE directly, or copy the
-included Sys/APPS/MPE folders to SD and launch Sys/HAMSTEROS.MPE.
+included Sys and APPS folders to SD and launch Sys/HAMSTEROS.MPE.
 [Host details](../docs/MPE-HOST.md).
 
 ## A8PicoCart

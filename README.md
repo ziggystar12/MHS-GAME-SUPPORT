@@ -21,8 +21,8 @@ separate unreleased product and is not included.
 The updated MPE host and NESVM passed software checks. The owner confirmed the
 reported NTSC NES launch failure was fixed on TeensyROM+ 0.8.0.14. Installed
 files were not independently read back; full-game and additional hardware
-acceptance remain unverified. The Teensy ZIP preserves its 0.8.0.13 firmware,
-desktop and apps. Host checks used a rebuilt desktop; the preserved desktop with
+acceptance remain unverified. The Teensy ZIP supplies stock 0.8.0.15, a matched host and the three VMS/MPE
+registration files; its desktop and apps are preserved. Host checks used a rebuilt desktop; the preserved desktop with
 the new host has not been requalified. Latest A8 components passed software
 checks; physical acceptance of their updated combination remains pending.
 KFF2 H24 retains its existing browser acceptance tied to the exact updater hash.

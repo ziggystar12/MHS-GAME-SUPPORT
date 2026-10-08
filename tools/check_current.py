@@ -50,7 +50,7 @@ def check_current(crt_check,uf2_check,hex_check):
   assert 'targets/kff2/engine.kfm' in entries
  mpe((ROOT/'packages/doomvm/DOOMVM.MPE').read_bytes());mpe((ROOT/'packages/hamsteros-c64/Sys/HAMSTEROS.MPE').read_bytes())
  uf2_check((ROOT/'firmware/a8picocart/A8PicoCart-MPE.uf2').read_bytes())
- hex_check(ROOT/'firmware/teensyrom-plus/TeensyROM+_0.8.0.13_full.hex')
+ hex_check(ROOT/'firmware/teensyrom-plus/TeensyROM+_0.8.0.15_full.hex')
  for n,magic in [('HAMSTEROS.MPE',b'A8H2'),('DOOM.MPE',b'A8D1')]: assert (ROOT/'packages/a8picocart'/n).read_bytes()[:4]==magic
  k=(ROOT/'packages/hamsteros-kff2/Sys/HAMSTEROS.MPE').read_bytes();assert k[:4]==b'KFP1' and struct.unpack_from('<III',k,4)==(1,128,len(k)) and k[64:80].rstrip(b'\0')==b'HAMSTEROS'
  header=bytearray(k[:128]);expected=struct.unpack_from('<I',header,60)[0];struct.pack_into('<I',header,60,0);assert zlib.crc32(header)==expected

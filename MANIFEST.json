@@ -10,7 +10,7 @@
     "NESVM.zip",
     "DOOMVM.zip"
   ],
-  "hostSha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559",
+  "hostSha256": "6a514420b2547d88f22e931276d912878f3de49d9f55ad5d249455bc0b20702c",
   "desktopSha256": "021bc3f1406445f698ca24f9e83aacbf6d255bb795a6ef5cd2aab9e238fc1426",
   "a8FirmwareSha256": "cc5e08bb4feb3c5ab8a32e08aab96819186f354514f91b5a627efbebdd7d5ded",
   "softwarePassed": true,
@@ -25,8 +25,8 @@
     },
     {
       "path": "firmware/mpe-host/MPE.TRH",
-      "bytes": 322624,
-      "sha256": "b9e834dc54e95f01cbd2fc7bcb6c3e02323d416895b23cd29a4127858850d559"
+      "bytes": 224320,
+      "sha256": "6a514420b2547d88f22e931276d912878f3de49d9f55ad5d249455bc0b20702c"
     },
     {
       "path": "firmware/mpe-host/MPE-DEMO.MPE",
@@ -100,23 +100,23 @@
     },
     {
       "path": "firmware/mpe-host/README.md",
-      "bytes": 805,
-      "sha256": "b5e8012128b61b909b7c33beb608d53ba17a716f92d65211162ac472e7a51e10"
+      "bytes": 891,
+      "sha256": "7bf7545ae345563281e297d4d9bd53dbde46cd286d22f556b791797e1543b54d"
     },
     {
       "path": "firmware/mpe-host/VERIFICATION.json",
-      "bytes": 25427,
-      "sha256": "77f61736890bff8d7b5b073812c1d43f4f7d6658aae2c346f24d1b0b7d4f5d32"
+      "bytes": 37448,
+      "sha256": "c0db2ed2b39d68d65b6d29b2eb73c0aa1f206f13d17657098c6c71e2e425c099"
     },
     {
       "path": "firmware/mpe-host/MANIFEST.json",
       "bytes": 2838,
-      "sha256": "43922955a704ac776b3cff918d8234728b60e4a272502d1af22082ea915d8807"
+      "sha256": "3515af34b0aac0d01b59c3fa36208d4a03ccb50f01471e6eb3be0d246586eadd"
     },
     {
-      "path": "firmware/teensyrom-plus/TeensyROM+_0.8.0.13_full.hex",
-      "bytes": 5252332,
-      "sha256": "cdea4ae1f7c115cb61fa56f50d8f518011492b7b0e4f08ae638aaefa3ba872ef"
+      "path": "firmware/teensyrom-plus/TeensyROM+_0.8.0.15_full.hex",
+      "bytes": 5272044,
+      "sha256": "0ed2e405d3de8ca6a515fac84950d8b6e7b36a9ffb456002d5222db748de3358"
     },
     {
       "path": "firmware/teensyrom-plus/notices/MHS-Prism-Plus-LICENSE.txt",

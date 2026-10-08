@@ -2,16 +2,16 @@
 
 [Current Teensy setup](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/Teensy.Support.Package.zip).
 Use MPE.TRH with stock firmware on TeensyROM+ v0.4 / Teensy 4.1. The setup ZIP
-keeps its existing stock 0.8.0.13 HEX, desktop, six apps and dictionary.
+contains the stock text-menu 0.8.0.15 core, matched MPE.TRH and generic .MPE
+registration. Its desktop, six apps and dictionary are unchanged.
 
-1. For a new setup, flash the supplied stock full HEX with Teensy Loader. If stock 0.8.0.14 is already installed, keep it.
+1. Flash the supplied stock 0.8.0.15 full HEX with Teensy Loader.
 2. Extract Teensy.Support.Package.zip to SD, preserving libraries and saves.
 3. Install MPE.TRH in the stock menu, then fully power the C64 off and on.
 4. Launch a VM .MPE, or launch the supplied Sys/HAMSTEROS.MPE desktop.
 
-The three [VMS/MPE files](../firmware/mpe-host/VMS/MPE) register .MPE. Preserve
-existing registration; copy these files for a new setup. They are available in
-this repository and are not separate members of the setup ZIP. VMBoot.TRH would
+The three [VMS/MPE files](../firmware/mpe-host/VMS/MPE) register .MPE and are now
+included in the setup ZIP. Copy the supplied trio together. VMBoot.TRH would
 replace the one host slot. A stock entry may display Unk; registration routes its launch.
 Each standalone VM carries its engine and C64 receiver. The checked VMBOOT.BIN
 configuration opens its original /VMS/<VM> library/save root. Renaming a CRT
@@ -23,9 +23,9 @@ and native PRG/CRT/disk launches return to stock.
 
 The host supplies rendering, input, transfer, storage, Ethernet, native APP and
 PCM8 services. It fits the 384 KiB slot and was built against stock source commit
-5c1196f51ed0552f1fce8bf6adaea42015f67fe2. This identifies the host build; the
-stock firmware bundled in the setup ZIP remains unchanged. Host, service,
-matching source rebuild and NESVM package checks passed. The host and service
+28f6aa87d763d0d34dc7320fcb44c336850f0323. The stock core uses the same upstream
+revision and excludes the separately installed extension-host slot. Host, service,
+164 native boot checks and an exact matching-source rebuild passed. The host and service
 tests used a rebuilt desktop; the preserved public desktop and apps with this
 new host have not been requalified.
 
