@@ -1,10 +1,14 @@
-# Software checks
+# Repository snapshot checks
+
+These checks bind the retained repository integration snapshot. Current release
+assets are newer; the optional release-directory comparison below applies only
+to the historical five-ZIP release before the October 14, 2026 refresh.
 
 From the repository root:
 
 ```sh
 python tools/check.py
-python tools/check_mpe_host.py --release-dir /path/to/current/downloads
+python tools/check_mpe_host.py --release-dir /path/to/historical/downloads
 ```
 
 Checks cover current component hashes, package/engine headers and CRCs,

@@ -2,20 +2,20 @@
 
 [Teensy desktop and matching apps](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/Teensy.Support.Package.zip).
 Install the [stock Teensy MPE host](MPE-HOST.md), copy Sys and APPS from the ZIP
-to SD and launch Sys/HAMSTEROS.MPE. Keep games, settings and saves. Paint,
-Image Viewer, SID Player, HamWrite, HamNet and ZipZork accompany the desktop,
-with the optional spelling dictionary. Supply your own ZipZork stories.
+to SD and launch Sys/HAMSTEROS.MPE. The matched host and desktop are 1.4.11.
+Paint, Image Viewer, SID Player, HamWrite, HamNet and ZipZork accompany the
+desktop, with the spelling dictionary. Supply your own ZipZork stories and
+preserve games, settings and saves.
 
-The setup ZIP preserves its desktop and apps. The updated host tests used a
-rebuilt desktop; this unchanged public desktop with the new host has not been
-requalified. The owner's NTSC NES launch report does not establish desktop or
-full-game acceptance.
-
-Atari HamsterOS is separate in A8PicoCart-Support.zip: put HAMSTEROS.MPE at the
-cart root and six matching companions in SYS. Version 0.4.2 pairs with shared
-firmware 1.2.10. These application formats are distinct from C64 packages.
+The A8PicoCart and A8PicoDuo support downloads contain the completed manufacturer
+factory images, with the matching Pico-owned Atari desktop and included software
+already preloaded. Follow their README for installation. Full factory images
+replace all files and settings; routine Power Engine updates preserve user files.
+These Atari application formats are distinct from C64 packages.
 
 KFF2 users install [KFF2-Support.zip](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/KFF2-Support.zip)
-with the [accepted H24 firmware](KFF2-H24.md). Copy Sys and APPS to SD and
-launch Sys/HAMSTEROS.MPE. This is the device-specific desktop from the checked
-compiler baseline. [Source and licenses](../source/README.md) remain available.
+with the 2.29 updater and matching 1.4.11 desktop. Copy Sys and APPS to SD and
+launch Sys/HAMSTEROS.MPE. Historical H24 acceptance belongs to the older image.
+The current components have software qualification; physical and complete-game
+acceptance remain separate. [Source and licenses](../source/README.md) remain
+available under the written offers.
