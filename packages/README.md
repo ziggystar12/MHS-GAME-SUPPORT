@@ -6,6 +6,7 @@ using its existing directory layout. Preserve libraries and saves when updating.
 | Download | Player and target | External library |
 | --- | --- | --- |
 | NESVM_C64.zip | NESVM.MPE; Teensy/KFF2 | VMS/NESVM/ROMS and SAVES |
+| GBVM_C64.zip | GBVM.MPE; Teensy/KFF2 | VMS/GBVM/ROMS and SAVES |
 | DOOMVM_C64.ZIP | DOOMVM.MPE; Teensy/KFF2 | Doom shareware included |
 | GGVM_C64.zip | GGVM.MPE; Teensy/KFF2 | VMS/GGVM/ROMS and SAVES |
 | Tritari_C64.zip | TRITARI.MPE; Teensy/KFF2 | VMS/TRITARI/ROMS/2600, 5200 and 7800 |

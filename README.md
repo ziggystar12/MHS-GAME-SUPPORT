@@ -11,6 +11,7 @@ Game conversion and the remaining games live in [Power Engine for 8-Bits](https:
 | [A8PicoCart support](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/A8PicoCart-Support.zip) | Exact A8Pico manufacturer package: 1.5.7 full factory image and installation/license README |
 | [A8PicoDuo support](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/A8PicoDuo-Support.zip) | Exact A8PicoDuo manufacturer package: both 1.6.2 full factory images and installation/license README |
 | [NESVM C64](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/NESVM_C64.zip) | Portable Teensy/KFF2 player; supply your own ROMs |
+| [Game Boy VM C64](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/GBVM_C64.zip) | Portable Teensy/KFF2 Game Boy and Game Boy Color player; supply your own ROMs |
 | [DoomVM C64](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/DOOMVM_C64.ZIP) | Portable Teensy/KFF2 player with Doom 1.9 shareware |
 | [Game Gear VM C64](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/GGVM_C64.zip) | Portable Teensy/KFF2 player; supply your own ROMs |
 | [Tritari C64](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/Tritari_C64.zip) | Portable Teensy/KFF2 Atari console player; supply your own ROMs |
@@ -19,7 +20,7 @@ Game conversion and the remaining games live in [Power Engine for 8-Bits](https:
 | [DoomVM A8](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/DOOMVM_A8.zip) | A8PicoCart Doom package with the shareware episode |
 | [DoomVM A8 Duo](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/DOOMVM_A8_DUO.zip) | Dedicated A8PicoDuo Doom package with the shareware episode |
 
-These twelve ZIPs are the uploaded downloads. Existing C64 archive layouts are
+These thirteen ZIPs are the uploaded downloads. Existing C64 archive layouts are
 retained; the A8 support ZIPs are the completed manufacturer packages unchanged.
 No source archives or separate checksum downloads are added. Required component
 notices and written source offers accompany the packages.

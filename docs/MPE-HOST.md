@@ -12,7 +12,7 @@ and HamsterOS desktop, six apps, dictionary and generic .MPE registration.
 Keep the supplied VMS/MPE/manifest.vmi, engine.mvm and client.crt together.
 Installing VMBoot.TRH replaces the one host slot. A stock entry may display Unk;
 registration routes its launch. Each standalone C64 VM contains its engines
-and receivers. NESVM, Game Gear and Tritari keep their external libraries under
+and receivers. NESVM, Game Boy, Game Gear and Tritari keep their external libraries under
 VMS; both Teensy and KFF2 players are in their portable packages.
 
 Tap the cartridge Menu/reset button after a desktop-launched MPE game to return
