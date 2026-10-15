@@ -6,7 +6,7 @@ Game conversion and the remaining games live in [Power Engine for 8-Bits](https:
 
 | Download | Contents |
 | --- | --- |
-| [Teensy setup](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/Teensy.Support.Package.zip) | Stock 0.8.0.15 firmware, matched 1.4.11 MPE host and desktop, apps, dictionary and MPE registration |
+| [Teensy setup](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/Teensy.Support.Package.zip) | Official stock 0.9 firmware, matched 1.4.12 MPE host, retained 1.4.11 desktop, apps, dictionary and MPE registration |
 | [KFF2 setup](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/KFF2-Support.zip) | 2.29 updater, matched 1.4.11 desktop, apps and notices |
 | [A8PicoCart support](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/A8PicoCart-Support.zip) | Exact A8Pico manufacturer package: 1.5.7 full factory image and installation/license README |
 | [A8PicoDuo support](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/A8PicoDuo-Support.zip) | Exact A8PicoDuo manufacturer package: both 1.6.2 full factory images and installation/license README |

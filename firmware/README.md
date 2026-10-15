@@ -5,7 +5,7 @@ Preserve existing games, settings and saves when applying routine updates.
 
 ## TeensyROM
 
-Extract Teensy.Support.Package.zip. Flash Firmware/TeensyROM+_0.8.0.15_full.hex
+Extract Teensy.Support.Package.zip. Flash Firmware/TeensyROM+_0.9_full.hex
 with Teensy Loader if setting up the supplied stock core. Copy MPE.TRH, Sys,
 APPS and VMS to SD. Install MPE.TRH through the stock text menu, then fully
 power-cycle. Keep the three VMS/MPE registration files together.
