@@ -8,8 +8,8 @@ Game conversion and the remaining games live in [Power Engine for 8-Bits](https:
 | --- | --- |
 | [Teensy setup](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/Teensy.Support.Package.zip) | Official stock 0.9 firmware, matched 1.4.12 MPE host, retained 1.4.11 desktop, apps, dictionary and MPE registration |
 | [KFF2 setup](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/KFF2-Support.zip) | 2.29 updater, matched 1.4.11 desktop, apps and notices |
-| [A8PicoCart support](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/A8PicoCart-Support.zip) | Exact A8Pico manufacturer package: 1.5.7 full factory image and installation/license README |
-| [A8PicoDuo support](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/A8PicoDuo-Support.zip) | Exact A8PicoDuo manufacturer package: both 1.6.2 full factory images and installation/license README |
+| [A8PicoCart support](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/A8PicoCart-Support.zip) | Firmware 1.6.35 factory image, verified full-flash eraser, preloaded software and installation/license README |
+| [A8PicoDuo support](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/A8PicoDuo-Support.zip) | Matching 1.6.35 A/B factory images, verified full-flash eraser, preloaded software and installation/license README |
 | [NESVM C64](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/NESVM_C64.zip) | Portable Teensy/KFF2 player; supply your own ROMs |
 | [Game Boy VM C64](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/GBVM_C64.zip) | Portable Teensy/KFF2 Game Boy and Game Boy Color player; supply your own ROMs |
 | [DoomVM C64](https://github.com/ziggystar12/MHS-GAME-SUPPORT/releases/latest/download/DOOMVM_C64.ZIP) | Portable Teensy/KFF2 player with Doom 1.9 shareware |
@@ -30,6 +30,13 @@ initial manufacturing or an intentional complete reset, following the included
 README. Back up an existing cartridge first. Routine updates use Power Engine's
 matching updater and packages. For ordinary SD/package updates, preserve ROMs,
 disks, settings and saves.
+
+The 1.6.35 A8 firmware combines the Type-63 cartridge cache improvement with the
+Duo startup fixes. Native Monkey Island is not included. Factory installation
+requires the included eraser on each Pico, followed by that Pico's matching
+factory image. Wait for RPI-RP2 to return between these steps, then fully power
+off/on after installation. This firmware download does not update the Power
+Engine application.
 
 The release uses completed component builds and software/file-readback evidence.
 Physical cartridge and complete-game acceptance remain separate. Historical H24
