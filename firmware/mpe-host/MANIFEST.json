@@ -1,32 +1,24 @@
 {
-  "hostSha256": "6a514420b2547d88f22e931276d912878f3de49d9f55ad5d249455bc0b20702c",
-  "testedFirmwareCommit": "28f6aa87d763d0d34dc7320fcb44c336850f0323",
+  "hostVersion": "1.4.21",
+  "hostSha256": "e21fd0c34fe7b098413070c2ec1fc8639f3cbffcc3d4d38b5da18a73760399ca",
+  "testedFirmwareCommit": "5b61f3e0bc4f49b04b67ce0f90ce61f2e81aabf0",
+  "stockFirmware": {
+    "filename": "TeensyROM+_0.9_full.hex",
+    "bytes": 5345276,
+    "sha256": "cc4fc8269b666e37579cc82b01cd43c5a0e2cb9f16f83d424a7430e206ba3d18",
+    "url": "https://github.com/SensoriumEmbedded/TeensyROM/releases/download/Release_v0.9/TeensyROM%2B_0.9_full.hex"
+  },
   "physicalAcceptance": false,
   "files": [
-    {
-      "path": "MPE.TRH",
-      "bytes": 224320,
-      "sha256": "6a514420b2547d88f22e931276d912878f3de49d9f55ad5d249455bc0b20702c"
-    },
     {
       "path": "MPE-DEMO.MPE",
       "bytes": 30283,
       "sha256": "04d5ae76d39fca0952438d1085ee8d6b93f46425eaad051fc2b7d9147685dff9"
     },
     {
-      "path": "VMS/MPE/engine.mvm",
-      "bytes": 120,
-      "sha256": "c236da04404ecf6d76a53b8ba7fe9a63f4596d08ea4e55a473d4752829ed5981"
-    },
-    {
-      "path": "VMS/MPE/client.crt",
-      "bytes": 24688,
-      "sha256": "b0f772ef59f135ae7257b14d420a872222fd5de4accca89e5a1f25ce49d913fe"
-    },
-    {
-      "path": "VMS/MPE/manifest.vmi",
-      "bytes": 38,
-      "sha256": "31ddf4bb5b61da8b37271239ac0cee71f149cadb5ec3e050b44e567bd3a2fa50"
+      "path": "MPE.TRH",
+      "bytes": 236608,
+      "sha256": "e21fd0c34fe7b098413070c2ec1fc8639f3cbffcc3d4d38b5da18a73760399ca"
     },
     {
       "path": "Notices/CRC32-MIT.txt",
@@ -69,24 +61,39 @@
       "sha256": "f07af78e816ae273bcdba2ba7878892d9192202a0214f10850635ff37daeba4a"
     },
     {
+      "path": "Notices/Source-offer.txt",
+      "bytes": 741,
+      "sha256": "31a9e48caef5ffb710f73be56619bf2f4d18c4fe34070d9a8624991e6e4d4897"
+    },
+    {
       "path": "Notices/TeensyROM-MIT.txt",
       "bytes": 1069,
       "sha256": "e9fdfceaaa41e4dc9f81745e70e77902f340c54888ef5a9c0c6795acb2e8bf2b"
     },
     {
-      "path": "Notices/Source-offer.txt",
-      "bytes": 740,
-      "sha256": "3bfbce6749bf93f6acf4626c5dbc86125802752a9026defdff04366ab8c5bf1a"
-    },
-    {
       "path": "README.md",
-      "bytes": 891,
-      "sha256": "7bf7545ae345563281e297d4d9bd53dbde46cd286d22f556b791797e1543b54d"
+      "bytes": 886,
+      "sha256": "567119b1ab481293a6d33cb0ab6c6670574c7cc2b1165e2459cc946198db482d"
     },
     {
       "path": "VERIFICATION.json",
-      "bytes": 37448,
-      "sha256": "c0db2ed2b39d68d65b6d29b2eb73c0aa1f206f13d17657098c6c71e2e425c099"
+      "bytes": 2677,
+      "sha256": "24e66c36eb3177a5f31b27c44451e19784f61e9fbc47496961b51a8d97d06564"
+    },
+    {
+      "path": "VMS/MPE/client.crt",
+      "bytes": 24688,
+      "sha256": "b0f772ef59f135ae7257b14d420a872222fd5de4accca89e5a1f25ce49d913fe"
+    },
+    {
+      "path": "VMS/MPE/engine.mvm",
+      "bytes": 120,
+      "sha256": "c236da04404ecf6d76a53b8ba7fe9a63f4596d08ea4e55a473d4752829ed5981"
+    },
+    {
+      "path": "VMS/MPE/manifest.vmi",
+      "bytes": 38,
+      "sha256": "31ddf4bb5b61da8b37271239ac0cee71f149cadb5ec3e050b44e567bd3a2fa50"
     }
   ]
 }
